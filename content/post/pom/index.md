@@ -2,7 +2,8 @@
 title: "pompompurinとBFの仲間たち"
 description: 
 date: 2022-09-15T15:53:18+09:00
-draft: false
+draft: true
+toc : true
 lastmod: '2022-11-17'
 ---
 
