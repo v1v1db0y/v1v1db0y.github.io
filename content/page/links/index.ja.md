@@ -25,7 +25,7 @@ comments: false
 Username                 | Platform                     
 -------------------------|------------------------------
 @m5qhq7wyagyg:matrix.org | Matrix (matrix.org project)  
-@math_iii                | Telegram                    
+@plzluv                  | Telegram                    
 
 TelegramはシークレットチャットのみでE2EEが適用されます。
 
