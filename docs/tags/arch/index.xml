@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>arch on sykfkk&#39;blog</title>
+        <link>https://v1v1db0y.github.io/tags/arch/</link>
+        <description>Recent content in arch on sykfkk&#39;blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sat, 10 Sep 2022 01:27:17 +0900</lastBuildDate><atom:link href="https://v1v1db0y.github.io/tags/arch/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Arch Linuxのインストール</title>
+        <link>https://v1v1db0y.github.io/p/arch-linux%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</link>
+        <pubDate>Sat, 10 Sep 2022 01:27:17 +0900</pubDate>
+        
+        <guid>https://v1v1db0y.github.io/p/arch-linux%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</guid>
+        <description>&lt;img src="https://archlinux.org/static/logos/archlinux-logo-light-scalable.1ae4cc2e2469.svg" alt="Featured image of post Arch Linuxのインストール" /&gt;&lt;h2 id=&#34;イントロダクション&#34;&gt;イントロダクション&lt;/h2&gt;
+&lt;p&gt;Linuxでしばらく遊んでいるとArch Linuxに出会うと思います。&lt;/p&gt;
+&lt;p&gt;Arch Linuxはシンプル、ミニマリズムに焦点を当てたLinuxディストリビューションです。
+インストールはCUI操作であり、コマンドを覚えたての初心者からするととっつきにくい
+ディストリビューションです。&lt;br&gt;
+しかしインストールをしてみるだけで、普段パソコンの電源ボタンを押してから
+OSのロック画面を開くまでの間に何が行われているか感覚的に掴むことができます。
+Linuxをもっと知りたい初心者向けに書いていきますので是非とも挑戦してください。&lt;/p&gt;
+&lt;h2 id=&#34;arch-linuxについて&#34;&gt;Arch Linuxについて&lt;/h2&gt;
+&lt;p&gt;Arch Linuxの特徴としてローリングリリースを採用しています。
+ローリングリリースとはパッケージを頻繫に更新することで常に
+最新のパッケージを利用し続けるということです。
+そのためOSのバージョンという概念がありません。&lt;/p&gt;
+&lt;h2 id=&#34;インストールする&#34;&gt;インストールする。&lt;/h2&gt;
+&lt;h3 id=&#34;usbにarchインストールメディアをインストールしていきます&#34;&gt;USBにArchインストールメディアをインストールしていきます。&lt;/h3&gt;
+&lt;p&gt;ここはほかのディストリビューションとあまり変わりません。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.archlinux.jp/download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Arch Linuxをダウンロード&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;好みの日本サーバーを選択してイメージファイルをダウンロードしてください。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://v1v1db0y.github.io/p/arch-linux%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/screenshot-2022-09-10.png&#34;
+	width=&#34;813&#34;
+	height=&#34;637&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/arch-linux%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/screenshot-2022-09-10_hu97f93144658833dab2e1bf1ba9736599_132946_480x0_resize_box_3.png 480w, https://v1v1db0y.github.io/p/arch-linux%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/screenshot-2022-09-10_hu97f93144658833dab2e1bf1ba9736599_132946_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;ファイル名の末尾に.isoとあるファイルを選択してください。&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;127&#34;
+		data-flex-basis=&#34;306px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;インストールが完了したら、1GB以上のUSBをパソコンに差し込んでRufus又はEtcherでイメージファイルを
+焼いていきます。&lt;/p&gt;
+&lt;h2 id=&#34;続きはいつか書きます&#34;&gt;続きはいつか書きます。&lt;/h2&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

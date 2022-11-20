@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Pages on sykfkk&#39;blog</title>
+        <link>https://v1v1db0y.github.io/page/</link>
+        <description>Recent content in Pages on sykfkk&#39;blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Thu, 08 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://v1v1db0y.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>自己紹介</title>
+        <link>https://v1v1db0y.github.io/about/</link>
+        <pubDate>Thu, 08 Sep 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://v1v1db0y.github.io/about/</guid>
+        <description>&lt;h1 id=&#34;wellcome&#34;&gt;Wellcome!&lt;/h1&gt;
+&lt;h3 id=&#34;私について&#34;&gt;私について&lt;/h3&gt;
+&lt;p&gt;サイバーセキュリティについて勉強しています。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;リバースエンジニアリング&lt;/li&gt;
+&lt;li&gt;脅威インテリジェンス&lt;/li&gt;
+&lt;li&gt;マルウェア&lt;/li&gt;
+&lt;li&gt;フィッシング&lt;br&gt;
+などに関心があります。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;このブログについて&#34;&gt;このブログについて&lt;/h3&gt;
+&lt;p&gt;どうでもいいこと、メモ、何かの布教活動、CTFのWritupなどをしていきます。&lt;br&gt;
+基本的に自分のアウトプットの場所として利用していきます。&lt;br&gt;
+まあ飽き性なので、長続きするか分かりませんが..&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>アーカイブ</title>
+        <link>https://v1v1db0y.github.io/archives/</link>
+        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://v1v1db0y.github.io/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>検索</title>
+        <link>https://v1v1db0y.github.io/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://v1v1db0y.github.io/search/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>連絡先</title>
+        <link>https://v1v1db0y.github.io/contact/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://v1v1db0y.github.io/contact/</guid>
+        <description>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Username&lt;/th&gt;
+&lt;th&gt;Platform&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;@m5qhq7wyagyg:matrix.org&lt;/td&gt;
+&lt;td&gt;Matrix (matrix.org project)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;@math_iii&lt;/td&gt;
+&lt;td&gt;Telegram&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;TelegramはシークレットチャットのみでE2EEが適用されます。&lt;/p&gt;
+&lt;!-- 
+```yaml
+links:
+  - title: Element
+    description: Matrix (matrix.org project)    
+    image: https://element.io/images/logo-mark-primary.svg
+  - title: GitHub
+    description: GitHub is the world&#39;s largest software development platform.
+    website: https://github.com
+    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
+  - title: TypeScript
+    description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
+    website: https://www.typescriptlang.org
+    image: ts-logo-128.jpg
+```
+`image` field accepts both local and external images.
+--&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

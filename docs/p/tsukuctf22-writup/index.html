@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='結果 47位でした！正答率ひくすぎぃぃぃぃぃいいい Attack of Tsukushi つくしくんはある観光地を調査した際に訪れた駅で写真を撮影した。 果たしてこの写真が撮られ'><title>TsukuCTF22 Writup</title>
+
+<link rel='canonical' href='https://v1v1db0y.github.io/p/tsukuctf22-writup/'>
+
+<link rel="stylesheet" href="/scss/style.min.8cf1c284d75963a437a62dbda76099d20c1bb980c21f66663f8d4e8da77e01e5.css"><meta property='og:title' content='TsukuCTF22 Writup'>
+<meta property='og:description' content='結果 47位でした！正答率ひくすぎぃぃぃぃぃいいい Attack of Tsukushi つくしくんはある観光地を調査した際に訪れた駅で写真を撮影した。 果たしてこの写真が撮られ'>
+<meta property='og:url' content='https://v1v1db0y.github.io/p/tsukuctf22-writup/'>
+<meta property='og:site_name' content='sykfkk&#39;blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2022-10-23T23:13:05&#43;09:00'/><meta property='article:modified_time' content='2022-10-23T23:13:05&#43;09:00'/><meta property='og:image' content='https://v1v1db0y.github.io/p/tsukuctf22-writup/logo.png' />
+<meta name="twitter:title" content="TsukuCTF22 Writup">
+<meta name="twitter:description" content="結果 47位でした！正答率ひくすぎぃぃぃぃぃいいい Attack of Tsukushi つくしくんはある観光地を調査した際に訪れた駅で写真を撮影した。 果たしてこの写真が撮られ"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://v1v1db0y.github.io/p/tsukuctf22-writup/logo.png' /><style>
+		
+    :root {
+        --article-font-family: "M+PLUS", var(--base-font-family);
+    }
+</style>
+
+<script>
+		(function () {
+		    const customFont = document.createElement('link');
+		    customFont.href = "https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap"
+		
+		    customFont.type = "text/css";
+		    customFont.rel = "stylesheet";
+		
+		    document.head.appendChild(customFont);
+		}());
+</script>
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="メニューを開く・閉じる">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/syakai_fukki_hub4e9cc3421d766017c9062cec53316d5_36293_300x0_resize_q75_box.jpg" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">sykfkk&#39;blog</a></h1>
+            <h2 class="site-description">BIG BROTHER IS WATCHING 𝑳𝒐𝒗𝒆</h2>
+        </div>
+    </header><ol class="social-menu">
+            
+                <li>
+                    <a 
+                        href='https://github.com/v1v1db0y'
+                        target="_blank"
+                        title="GitHub"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://www.youtube.com/watch?v=o-YBDTqX_ZU'
+                        target="_blank"
+                        title="Twitter"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>ホーム</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/p/pompompurin%E3%81%A8bf%E3%81%AE%E4%BB%B2%E9%96%93%E3%81%9F%E3%81%A1/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>pompompurinとBFの仲間たち</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>自己紹介</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>アーカイブ</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>検索</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/contact/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-send" width="36" height="36" viewBox="0 0 24 24" stroke-width="0.5" stroke="#c1c1c1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <line x1="10" y1="14" x2="21" y2="3" />
+  <path d="M21 3l-6.5 18a0.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a0.55 .55 0 0 1 0 -1l18 -6.5" />
+</svg>
+
+                
+                <span>連絡先</span>
+            </a>
+        </li>
+        
+
+        <div class="menu-bottom-section">
+                <li id="i18n-switch">  
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                    <select name="language" onchange="window.location.href = this.selectedOptions[0].value">
+                        
+                            <option value="https://v1v1db0y.github.io/en/" >English</option>
+                        
+                            <option value="https://v1v1db0y.github.io/" selected>日本語</option>
+                        
+                    </select>
+                </li>
+            
+            
+            
+                <li id="dark-mode-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                    <span>ダークモード</span>
+                </li>
+            
+        </div>
+    </ol>
+</aside>
+<main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/p/tsukuctf22-writup/">
+                <img src="/p/tsukuctf22-writup/logo_hu4d9166bf2cd5cb3229512422c4cc344d_404989_800x0_resize_box_3.png"
+                        srcset="/p/tsukuctf22-writup/logo_hu4d9166bf2cd5cb3229512422c4cc344d_404989_800x0_resize_box_3.png 800w, /p/tsukuctf22-writup/logo_hu4d9166bf2cd5cb3229512422c4cc344d_404989_1600x0_resize_box_3.png 1600w"
+                        width="800" 
+                        height="304" 
+                        loading="lazy"
+                        alt="Featured image of post TsukuCTF22 Writup" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/ctf/" >
+                CTF
+            </a>
+        
+            <a href="/categories/writeup/" >
+                Writeup
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/tsukuctf22-writup/">TsukuCTF22 Writup</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Oct 23, 2022</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    読了時間: 10分
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="結果">結果</h2>
+<p><img src="/p/tsukuctf22-writup/screenshot_20221023_225748.png"
+	width="792"
+	height="1238"
+	srcset="/p/tsukuctf22-writup/screenshot_20221023_225748_hu8ae69d65007bc1ffc410648ba1042938_46646_480x0_resize_box_3.png 480w, /p/tsukuctf22-writup/screenshot_20221023_225748_hu8ae69d65007bc1ffc410648ba1042938_46646_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="63"
+		data-flex-basis="153px"
+	
+> <img src="/p/tsukuctf22-writup/screenshot_2022-10-23_233924.png"
+	width="1220"
+	height="1122"
+	srcset="/p/tsukuctf22-writup/screenshot_2022-10-23_233924_hu59bbc3e26354b8416346bfeaa3800cba_95868_480x0_resize_box_3.png 480w, /p/tsukuctf22-writup/screenshot_2022-10-23_233924_hu59bbc3e26354b8416346bfeaa3800cba_95868_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="108"
+		data-flex-basis="260px"
+	
+></p>
+<p>47位でした！正答率ひくすぎぃぃぃぃぃいいい</p>
+<h2 id="attack-of-tsukushi">Attack of Tsukushi</h2>
+<blockquote>
+<p>つくしくんはある観光地を調査した際に訪れた駅で写真を撮影した。<br>
+果たしてこの写真が撮られた駅はどこだろうか？ フラグは駅の郵便番号（ハイフンなし）を入力して下さい<br>
+e.g. 東京駅の場合は郵便番号が100-0005なのでフラグは TsukuCTF22{1000005} となります。
+<img src="/p/tsukuctf22-writup/Challenges/Attack_of_Tsukushi.jpg"
+	width="2857"
+	height="3131"
+	srcset="/p/tsukuctf22-writup/Challenges/Attack_of_Tsukushi_hu4faec8bd2f69f34203729ad72871e4df_1822574_480x0_resize_q75_box.jpg 480w, /p/tsukuctf22-writup/Challenges/Attack_of_Tsukushi_hu4faec8bd2f69f34203729ad72871e4df_1822574_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="91"
+		data-flex-basis="218px"
+	
+></p>
+</blockquote>
+<p>Googlレンズにぶっこむとそれっぽいリヴァイ兵長がでてきます。
+<img src="/p/tsukuctf22-writup/screenshot_2022-10-23_235704.png"
+	width="1476"
+	height="1143"
+	srcset="/p/tsukuctf22-writup/screenshot_2022-10-23_235704_hu9f3c8499619e8dc62f18e664cafa72eb_1898106_480x0_resize_box_3.png 480w, /p/tsukuctf22-writup/screenshot_2022-10-23_235704_hu9f3c8499619e8dc62f18e664cafa72eb_1898106_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="129"
+		data-flex-basis="309px"
+	
+></p>
+<h2 id="money">Money</h2>
+<blockquote>
+<p>どこ？ フラグは写真が撮影された場所の郵便番号(ハイフンを除く)を入れて下さい。<br>
+例えば撮影された場所が東京都庁の場合、郵便番号は163-8001なのでTsukuCTF22{1638001}となります。<br>
+<img src="/p/tsukuctf22-writup/Challenges/money.jpg"
+	width="4032"
+	height="3024"
+	srcset="/p/tsukuctf22-writup/Challenges/money_hu41bdb4d7d92c6ca7cc05069edda1d41d_6605845_480x0_resize_q75_box.jpg 480w, /p/tsukuctf22-writup/Challenges/money_hu41bdb4d7d92c6ca7cc05069edda1d41d_6605845_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="133"
+		data-flex-basis="320px"
+	
+></p>
+</blockquote>
+<p>リヴァイの問題と同じようにGoogleレンズに入れてみます。
+<img src="/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_000932.png"
+	width="1727"
+	height="1122"
+	srcset="/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_000932_hua70bbfe5676cd88024bdbfa2fd6fad98_2207132_480x0_resize_box_3.png 480w, /p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_000932_hua70bbfe5676cd88024bdbfa2fd6fad98_2207132_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="153"
+		data-flex-basis="369px"
+	
+></p>
+<p>出てきたブログを読むと、どうやら金閣寺にあるそうです。</p>
+<h2 id="flymetothetsukushi">FlyMeToTheTsukushi</h2>
+<blockquote>
+<p>つくし君は、はるばる飛行機で愛するパートナーのもとへやってきました。
+ここはどこの空港かわかりますか？</p>
+<p>この問題はフラグを10回までしか提出できません。
+※フラグの形式はTsukuCTF22{空港名}です。空港の名前だけを入力してください。(hoge空港の場合、hogeのみがフラグになります)
+<img src="/p/tsukuctf22-writup/Challenges/airport.jpeg"
+	width="2919"
+	height="3023"
+	srcset="/p/tsukuctf22-writup/Challenges/airport_hue05306d44217511d2f12fa270bef5730_1000765_480x0_resize_q75_box.jpeg 480w, /p/tsukuctf22-writup/Challenges/airport_hue05306d44217511d2f12fa270bef5730_1000765_1024x0_resize_q75_box.jpeg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="96"
+		data-flex-basis="231px"
+	
+></p>
+</blockquote>
+<p>とりあえず、JALの「AIRBUS A350」という機体を探します。
+<img src="/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_001458.png"
+	width="1282"
+	height="950"
+	srcset="/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_001458_hub03b6d7fe5e1168cd005568b46669179_1220045_480x0_resize_box_3.png 480w, /p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_001458_hub03b6d7fe5e1168cd005568b46669179_1220045_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="134"
+		data-flex-basis="323px"
+	
+>
+対象経路から「羽田」「伊丹」「新千歳」「福岡」「那覇」まで絞りました。これを全部回答してみます。</p>
+<h2 id="inuyama082">inuyama082</h2>
+<blockquote>
+<p>つくし君は愛知県犬山市にデートに来た時の思い出の写真を見返しています。
+おいしそうな写真を見つけ、おやつが食べたくなりました。 写真のおやつの名前を教えてください。<br>
+※フラグの形式はTsukuCTF22{XXXXXXX ver.XXXXXX}です。
+<img src="/p/tsukuctf22-writup/Challenges/inuyama082.jpg"
+	width="4000"
+	height="2250"
+	srcset="/p/tsukuctf22-writup/Challenges/inuyama082_hu7850b88b0bede9520d26f00948c5a6cf_1813587_480x0_resize_q75_box.jpg 480w, /p/tsukuctf22-writup/Challenges/inuyama082_hu7850b88b0bede9520d26f00948c5a6cf_1813587_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="426px"
+	
+></p>
+</blockquote>
+<p>息を吸うようにGoogle画像検索にぶち込みます。誰かのブログが出てきます。<br>
+「犬山よあけや」というお店にこのお菓子があるようです。<br>
+なのでメニューにある通り「和チーズケーキ」を送信しまくります。
+しかし名前は「ver」があるので違います。
+もう一度検索に「ver」をつき足して再検索すると<br>
+このツイートに行きつきます。</p>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">新登場❣️ 和チーズケーキ ver.ココアパウダー😋<br>和チーズケーキに ココアパウダーを トッピング✨<br>和チーズケーキの 新たな味を ぜひご堪能ください🎶<a href="https://twitter.com/hashtag/%E7%8A%AC%E5%B1%B1%E5%9F%8E%E4%B8%8B%E7%94%BA?src=hash&amp;ref_src=twsrc%5Etfw">#犬山城下町</a> <a href="https://twitter.com/hashtag/%E7%8A%AC%E5%B1%B1%E3%82%B0%E3%83%AB%E3%83%A1?src=hash&amp;ref_src=twsrc%5Etfw">#犬山グルメ</a> <a href="https://twitter.com/hashtag/%E7%8A%AC%E5%B1%B1%E3%82%AB%E3%83%95%E3%82%A7?src=hash&amp;ref_src=twsrc%5Etfw">#犬山カフェ</a> <a href="https://twitter.com/hashtag/%E9%A3%9F%E3%81%B9%E6%AD%A9%E3%81%8D?src=hash&amp;ref_src=twsrc%5Etfw">#食べ歩き</a> <a href="https://t.co/N8uVz2eQTB">pic.twitter.com/N8uVz2eQTB</a></p>&mdash; 犬山よあけや (@inuyamayoakeya) <a href="https://twitter.com/inuyamayoakeya/status/1520908426603163649?ref_src=twsrc%5Etfw">May 1, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+「和チーズケーキ ver.ココアパウダ」を送信します。これも違います。
+悩んでいると、与えられた画像は抹茶じゃんと思い、「和チーズケーキ ver.ココアパウダ　抹茶」で調べます。
+<p><img src="/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_003713.png"
+	width="781"
+	height="152"
+	srcset="/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_003713_hu314ec49217df7277365569c4e72020d5_34335_480x0_resize_box_3.png 480w, /p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_003713_hu314ec49217df7277365569c4e72020d5_34335_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="513"
+		data-flex-basis="1233px"
+	
+>
+ありました。</p>
+<h2 id="sky">sky</h2>
+<blockquote>
+<p>帰ってくるあなたが最高のプレゼント。つくし君は電車にガタゴト揺られています。
+次の停車駅で降りるようなのですが、どこかわかりますか？
+※フラグの形式はTsukuCTF22{次の停車駅}です。公式サイトの表記を採用します(スペースは含めません)。
+<img src="/p/tsukuctf22-writup/Challenges/sky.jpg"
+	width="4000"
+	height="2250"
+	srcset="/p/tsukuctf22-writup/Challenges/sky_hu7850b88b0bede9520d26f00948c5a6cf_4591567_480x0_resize_q75_box.jpg 480w, /p/tsukuctf22-writup/Challenges/sky_hu7850b88b0bede9520d26f00948c5a6cf_4591567_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="426px"
+	
+></p>
+</blockquote>
+<p>とりあえず、画像から得られる情報を整理します<br>
+・CentXという文字<br>
+・Windという雑誌<br>
+・ガラスに反射している赤い記号<br>
+・Wi-Fiが利用できるマークがある<br>
+最初は新幹線の中という線でシート席の色を調べていましたが見当たらず、やめました。<br>
+「Wind雑誌　新幹線」で調べてみるとyahoo知恵袋で手がかりがつかめました。
+どうやら新幹線ではなく「名鉄ミュースカイ」の中らしかったです。
+そこで名鉄ミュースカイのシートについてのブログを読んで、最後の記事に「名鉄名古屋」という駅名標の画像があったので送信しました。<br>
+確かこれがFlagでしたが、名鉄ミュースカイの停車駅は結構多かったのでまぐれだったなと思います&hellip;</p>
+<h2 id="station">station</h2>
+<blockquote>
+<p>つくし君はとある駅で友達を待っています。さて、つくし君はどこの駅にいるでしょうか？
+TsukuCTF22{駅名(漢字、平仮名、英語可)}
+<img src="/p/tsukuctf22-writup/Challenges/station.jpg"
+	width="607"
+	height="1315"
+	srcset="/p/tsukuctf22-writup/Challenges/station_hu9f7d937733a3f788d24a6d3d529fd1ad_471302_480x0_resize_q75_box.jpg 480w, /p/tsukuctf22-writup/Challenges/station_hu9f7d937733a3f788d24a6d3d529fd1ad_471302_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="46"
+		data-flex-basis="110px"
+	
+></p>
+</blockquote>
+<p>画像から分かるのは
+・壁の絵<br>
+・緑のライン<br>
+・東豊線<br>
+・女性車両らしい<br>
+・なんか右上に「1[]」って書いてある<br>
+東豊線は北海道にある市営地下鉄らしいです。路線図を見ると「大通駅」がほかの南北線と東西線を結んでいるようです。<br>
+そして壁に書いてあるのは「大通り駅」から見て「新さっぽろ駅」に向かうまでの路線だと考えました。<br>
+また、札幌市営地下鉄の公式サイトには女性車両についてこのように記述されていました。これから東西線であろうと推定しました。</p>
+<p><img src="/p/tsukuctf22-writup/jfiowea.png"
+	width="1732"
+	height="1312"
+	srcset="/p/tsukuctf22-writup/jfiowea_hudc06f356f119d2894df984ef514bb09a_191887_480x0_resize_box_3.png 480w, /p/tsukuctf22-writup/jfiowea_hudc06f356f119d2894df984ef514bb09a_191887_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="132"
+		data-flex-basis="316px"
+	
+>
+これらからFlag「大通り駅」ではないか。違いました。<br>
+ではひとつ前に駅の「西11丁目」ですか？？ これでflagをとってしまったと思います。</p>
+<h2 id="douro">douro</h2>
+<blockquote>
+<p>旅行中のつくし君は迷子になってしまったようです。うつむいています。送られてきた写真から場所を特定できますか？<br>
+※フラグの形式はTsukuCTF22{緯度 _ 経度}です。ただし、緯度経度は十進法で小数点以下五桁目を切り捨てたものとします。<br>
+<img src="/p/tsukuctf22-writup/Challenges/douro.jpg"
+	width="4000"
+	height="2250"
+	srcset="/p/tsukuctf22-writup/Challenges/douro_hu7850b88b0bede9520d26f00948c5a6cf_4856260_480x0_resize_q75_box.jpg 480w, /p/tsukuctf22-writup/Challenges/douro_hu7850b88b0bede9520d26f00948c5a6cf_4856260_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="426px"
+	
+></p>
+</blockquote>
+<p>この画像を拡大してみると、
+<img src="/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_011251.png"
+	width="1283"
+	height="656"
+	srcset="/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_011251_hu54f775f3094de7ecc8dfe5f016c5c915_874420_480x0_resize_box_3.png 480w, /p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_011251_hu54f775f3094de7ecc8dfe5f016c5c915_874420_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="195"
+		data-flex-basis="469px"
+	
+>
+自分には 「よいはもーる　1990」と読めました。これをそのまま調べると四五百商店街(よいほモール)がの公式サイトに画像と同じタイルが見つかります。<br>
+散歩ブログ的なものを読んで、このタイルがどこにあるかを探します。
+<img src="/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_025648.png"
+	width="2910"
+	height="1852"
+	srcset="/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_025648_hu64d2812c2ae340b8cfe68665cca6f531_4717791_480x0_resize_box_3.png 480w, /p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_025648_hu64d2812c2ae340b8cfe68665cca6f531_4717791_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="157"
+		data-flex-basis="377px"
+	
+></p>
+<h2 id="where">Where</h2>
+<blockquote>
+<p>北海道に住んでいるつくしさんは東京旅行に行った際に高層ビルの窓から写真を撮りました。<br>
+でも撮影した場所を忘れてしまったようです。この写真が撮影された場所について建物名を教えてあげてください。<br>
+フラグはこの建物の開業日(YYYY/MM/DD)です。<br>
+たとえば、東京スカイツリーの開業日は2012年5月22日なので、フラグはTsukuCTF22{2012/05/22}となります。<br>
+<img src="/p/tsukuctf22-writup/Challenges/Where.jpg"
+	width="4032"
+	height="3024"
+	srcset="/p/tsukuctf22-writup/Challenges/Where_hu7b674215ffbe9060f1a029451952bfef_1468430_480x0_resize_q75_box.jpg 480w, /p/tsukuctf22-writup/Challenges/Where_hu7b674215ffbe9060f1a029451952bfef_1468430_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="133"
+		data-flex-basis="320px"
+	
+></p>
+</blockquote>
+<p>とりあえず、google画像検索をしてみるとこの画像で一番高いビルは「渋谷スイカ」ということが分かりました。確かに画像を拡大してみても「SHIBUYA SKY」の文字が確認できます。
+また、この画像からは左奥に東京タワーが見えます。この条件からの角度をGoogle Erthを使って調べると
+<img src="/p/tsukuctf22-writup/screenshot_20221022_153459.png"
+	width="2242"
+	height="1268"
+	srcset="/p/tsukuctf22-writup/screenshot_20221022_153459_huf0506910a8db5317127fbfadd19693a0_4118132_480x0_resize_box_3.png 480w, /p/tsukuctf22-writup/screenshot_20221022_153459_huf0506910a8db5317127fbfadd19693a0_4118132_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="176"
+		data-flex-basis="424px"
+	
+>
+見えるであろうビルを答えますが、このビルは5回改装工事をしており、そのため5回リニューアルオープンしています。この場合一番最初の開業日がflagだったみたいです。</p>
+<h2 id="gorgeous-interior-bus">Gorgeous Interior Bus</h2>
+<blockquote>
+<p>観光地に来たつくし君は、豪華なバスを見かけたので、それに乗って観光することにしました。
+その時、つくし君のお母さんから「どこにいるの？」と連絡が着ましたが、
+おっちょこちょいなつくし君は、観光地の名前も、乗っているバスの路線も忘れてしまい、
+とっさに車内の写真を撮って、「ここ」と返信しました。 つくしくんはどこにいるのでしょうか？
+つくしくんが写真を撮ったところに最も近い交差点の名前を特定してください。<br>
+※フラグの形式はTsukuCTF22{交差点の名前}です。
+<img src="/p/tsukuctf22-writup/Challenges/GorgeousInteriorBus.jpg"
+	width="4032"
+	height="2268"
+	srcset="/p/tsukuctf22-writup/Challenges/GorgeousInteriorBus_hua4fcd0789b660cf483a8453f563bfc2b_3397917_480x0_resize_q75_box.jpg 480w, /p/tsukuctf22-writup/Challenges/GorgeousInteriorBus_hua4fcd0789b660cf483a8453f563bfc2b_3397917_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="426px"
+	
+></p>
+</blockquote>
+<p>google画像検索によりバスは熱海を走る「湯～遊～バス」と分かります。<br>
+湯～遊～バスの周回ルートを調べると熱海駅を出発から出発するらしいです。
+湯～遊～バスが停車するバス停表を見ながら、画像の奥のパネルにある文字と見比べます。<br>
+画像には「親水公園」「銀座」と書いてあり、次のバス停は「銀座」だと推測できます。
+Googleストリートビューでバス停銀座から湯～遊～バスのルートを逆走します。
+するとこの看板がある交差点があります。
+<img src="/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_013408.png"
+	width="642"
+	height="328"
+	srcset="/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_013408_hu703f2bf8c18ce30f9040ba1cd0f90803_328553_480x0_resize_box_3.png 480w, /p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_013408_hu703f2bf8c18ce30f9040ba1cd0f90803_328553_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="195"
+		data-flex-basis="469px"
+	
+> <img src="/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_022834.png"
+	width="1208"
+	height="756"
+	srcset="/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_022834_hu70eb3c5b7818a61fb11fe9caa2632927_1490663_480x0_resize_box_3.png 480w, /p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_022834_hu70eb3c5b7818a61fb11fe9caa2632927_1490663_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="159"
+		data-flex-basis="383px"
+	
+>
+<img src="/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_030510.png"
+	width="1024"
+	height="576"
+	srcset="/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_030510_hu5d88ecb914ca2440d0c454219fb5db86_1103857_480x0_resize_box_3.png 480w, /p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_030510_hu5d88ecb914ca2440d0c454219fb5db86_1103857_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="426px"
+	
+>
+<br>
+この問題めっちゃ旅行行きたくなりました。。。</p>
+<h2 id="bringer_of_happpiness">Bringer_of_happpiness</h2>
+<blockquote>
+<p>つくしくんは荷物を運び終えて休憩してるときに撮った写真。さて撮影場所はどこだろう？
+※フラグの形式はTsukuCTF22{緯度 _ 経度}です。ただし、緯度経度は十進法で小数点以下五桁目を切り捨てたものとします。
+<img src="/p/tsukuctf22-writup/Challenges/Bringer_of_happiness.jpg"
+	width="2980"
+	height="2129"
+	srcset="/p/tsukuctf22-writup/Challenges/Bringer_of_happiness_hu621a562dc37eaef74cdb0eb2e52adc5d_851912_480x0_resize_q75_box.jpg 480w, /p/tsukuctf22-writup/Challenges/Bringer_of_happiness_hu621a562dc37eaef74cdb0eb2e52adc5d_851912_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="139"
+		data-flex-basis="335px"
+	
+></p>
+</blockquote>
+<p>画像から分かることは
+・黄色い電車<br>
+・j- なんとかかんとか　というスーパーマーケット？？<br>
+・パチンコ店ののぼり<br>
+・踏切<br>
+・駅名が書かれてるところに、変な眉毛みたいなのが書かれてある<br>
+<br>
+これではわかりそうにないので黄色い電車の特徴をもっと詳しく見ていきます。<br>
+・後ろの窓が３つ<br>
+・なんか丸いのが付いてる<br>
+・左になんか書いてある？<br>
+<br>
+これらから「黄色い電車」で調べた画像を見ていきます。すると島原鉄道がそれっぽいなと思いました。<br>
+公式サイトから黄色い電車が停まる各駅がどんな風景なのかを見ていくと、終点に眉毛みたいな駅名標の画像がありました。(眉毛はスポットライトだったみたい)<br>
+<img src="/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_023400.png"
+	width="1560"
+	height="1013"
+	srcset="/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_023400_hu9861a0f8d10398940c2d04595fdcff60_2959661_480x0_resize_box_3.png 480w, /p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_023400_hu9861a0f8d10398940c2d04595fdcff60_2959661_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="153"
+		data-flex-basis="369px"
+	
+></p>
+<h2 id="desk">Desk</h2>
+<blockquote>
+<p>つくし君の大好きなお姉さんのデスクを見学させてもらったよ。 さて、このデスクはどこにあるのだろうか?<br>
+フラグ形式は写真が撮影された場所の郵便番号(ハイフンを除く)を入れて下さい。
+例えば撮影された場所が東京都庁の場合、郵便番号は163-8001なので TsukuCTF22{1638001} となります。
+<img src="/p/tsukuctf22-writup/Challenges/Desk.jpg"
+	width="1525"
+	height="1793"
+	srcset="/p/tsukuctf22-writup/Challenges/Desk_hu3e4f7e0110611801d8659b9bdae30a34_450382_480x0_resize_q75_box.jpg 480w, /p/tsukuctf22-writup/Challenges/Desk_hu3e4f7e0110611801d8659b9bdae30a34_450382_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="85"
+		data-flex-basis="204px"
+	
+></p>
+</blockquote>
+<p>これはテレパシー使ってますが、クリアファイルの画像を見て、沖縄かな？と思ってしまいました。
+沖縄の地図と一致しているため沖縄であることまでは確定しました。<br>
+画像で気になったのは<br>
+・右下にキャラクター<br>
+・なんか緑いっぱいい<br>
+・○○のデスク　ハートのロゴ？<br>
+・奥に島みたいなのがある</p>
+<p>ハートにモザイクがかからなかったのが気になり、「沖縄　ハート　ロゴ」で調べました。するとこれは南城市のロゴだと分かります。<br>
+また、キャラクターは南城市のマスコットキャラクターである「なんじぃ」だと分かりました。
+また、島に関しても南城市の目に前には久高島という島があります。しかしこれは西原町という線も捨てきれないなと思いました。
+<img src="/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_015825.png"
+	width="791"
+	height="500"
+	srcset="/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_015825_hu5a375058374539f72ddec126b39085c6_140138_480x0_resize_box_3.png 480w, /p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_015825_hu5a375058374539f72ddec126b39085c6_140138_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="158"
+		data-flex-basis="379px"
+	
+></p>
+<p>南城市のブログを読んでいて、こんなデスクがあるのはどんな人かを考えたときに観光課だろうと思いつきました。<br>
+Google Mapで南城市の観光課を調べてみていくとありました。</p>
+<h2 id="takaitakai">TakaiTakai</h2>
+<blockquote>
+<p>日本の町は美しい。撮影地を答えてください。フラグはこの建物の開業日(YYYY/MM/DD)です。<br>
+たとえば、東京スカイツリーの開業日は2012年5月22日なので、フラグはTsukuCTF22{2012/05/22}となります。
+<img src="/p/tsukuctf22-writup/Challenges/TakaiTakai.jpg"
+	width="720"
+	height="540"
+	srcset="/p/tsukuctf22-writup/Challenges/TakaiTakai_hu07e8f8bcbbae10ba15a01627fd17c6c3_167004_480x0_resize_q75_box.jpg 480w, /p/tsukuctf22-writup/Challenges/TakaiTakai_hu07e8f8bcbbae10ba15a01627fd17c6c3_167004_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="133"
+		data-flex-basis="320px"
+	
+></p>
+</blockquote>
+<p>画像を眺めていて何もひらめきませんでしたが、多分東京なんだろうな～と思いながら、手前に見えるビルの青いロゴに注目して調べていきました。
+<img src="/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_020629.png"
+	width="1222"
+	height="1002"
+	srcset="/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_020629_hub12a9def09262d21759bbbff60f66724_1452419_480x0_resize_box_3.png 480w, /p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_020629_hub12a9def09262d21759bbbff60f66724_1452419_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="121"
+		data-flex-basis="292px"
+	
+></p>
+<p>「青いロゴ　会社　日本」で調べて画像を見ていくと、「日本システムウエア株式会社」がそれっぽいなと思いました。
+Google Erthでこのビルを確認しにいきます。</p>
+<p><img src="/p/tsukuctf22-writup/screenshot_20221022_174025.png"
+	width="1732"
+	height="1271"
+	srcset="/p/tsukuctf22-writup/screenshot_20221022_174025_hu8f355dd4a621ba07f84023f73dedfd91_3994468_480x0_resize_box_3.png 480w, /p/tsukuctf22-writup/screenshot_20221022_174025_hu8f355dd4a621ba07f84023f73dedfd91_3994468_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="136"
+		data-flex-basis="327px"
+	
+></p>
+<p>ありました。日本システムウエア株式会社のビルを見ることができる建物がフラグです。</p>
+<h2 id="utsukushii">uTSUKUSHIi</h2>
+<blockquote>
+<p>私は世界一可愛い猫ちゃんの写真を見つけました。この猫ちゃんの生年月日を答えてください。<br>
+フラグフォーマットは TsukuCTF22{YYYY/MM/DD} です。<br>
+<img src="/p/tsukuctf22-writup/Challenges/meow.jpg"
+	width="3024"
+	height="4032"
+	srcset="/p/tsukuctf22-writup/Challenges/meow_hub46d99954e8c7d76e7ae61864f383f6c_4539352_480x0_resize_q75_box.jpg 480w, /p/tsukuctf22-writup/Challenges/meow_hub46d99954e8c7d76e7ae61864f383f6c_4539352_1024x0_resize_q75_box.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="75"
+		data-flex-basis="180px"
+	
+></p>
+</blockquote>
+<p>もう、最初見たときは情報量少なすぎて意味わかりませんでしたが、情報を整理することでなんとなく見えてきました。<br>
+・ねこじゃらし<br>
+・黄色いソファ<br>
+・かご<br>
+・灰色と白の猫<br>
+<br>
+フラグの形式とねこじゃらしから画像は猫カフェではないかと推測しました。<br>
+とりあえず、猫の種類を調べようとGoogle画像検索で調べます。すると
+「ブリティッシュショートヘア」だと分かりました。ブリティッシュショートヘア(グレー＆ホワイト)がいる猫カフェを見つけようとしましたがしかし見つかりませんでした。<br>
+方向を変えて「猫カフェ　黄色いソファ」で検索しました。すると本当に雰囲気がよさそうな黄色いソファのある猫カフェが京都・河原町に新店舗オープンするという記事を見つけました。
+<img src="/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_024604.png"
+	width="1038"
+	height="423"
+	srcset="/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_024604_hu62e7b72c00d4d015c477604840dec851_873267_480x0_resize_box_3.png 480w, /p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_024604_hu62e7b72c00d4d015c477604840dec851_873267_1024x0_resize_box_3.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="245"
+		data-flex-basis="588px"
+	
+>
+公式サイトから画像と同じような柄をした猫を見を見つけられました。</p>
+<h2 id="感想">感想</h2>
+<p>常設CTFやOSINT問題のWritupを読んでみたりはしたことありましたが、まともに出たCTFは初めてになります。なのでWritupを書くのも初めてです。今回はガチで挑みました。
+実力としては正答率が気になりました。実際のOSINTで出題者の意図をかんがえて&hellip;なんてことはありませんし、ここまでの間違えだと推測したものが違ってしまうと一生回答にたどり着かないなと思いました。</p>
+<br>
+なにか著作権的にまずいものがあれば知らせてください。早急に削除します。
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2022 sykfkk&#39;blog
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        テーマ <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.13.0">Stack</a></b> は <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> によって設計されています。
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目次</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#結果">結果</a></li>
+    <li><a href="#attack-of-tsukushi">Attack of Tsukushi</a></li>
+    <li><a href="#money">Money</a></li>
+    <li><a href="#flymetothetsukushi">FlyMeToTheTsukushi</a></li>
+    <li><a href="#inuyama082">inuyama082</a></li>
+    <li><a href="#sky">sky</a></li>
+    <li><a href="#station">station</a></li>
+    <li><a href="#douro">douro</a></li>
+    <li><a href="#where">Where</a></li>
+    <li><a href="#gorgeous-interior-bus">Gorgeous Interior Bus</a></li>
+    <li><a href="#bringer_of_happpiness">Bringer_of_happpiness</a></li>
+    <li><a href="#desk">Desk</a></li>
+    <li><a href="#takaitakai">TakaiTakai</a></li>
+    <li><a href="#utsukushii">uTSUKUSHIi</a></li>
+    <li><a href="#感想">感想</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

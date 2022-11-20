@@ -1,0 +1,1105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on sykfkk&#39;blog</title>
+        <link>https://v1v1db0y.github.io/post/</link>
+        <description>Recent content in Posts on sykfkk&#39;blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sun, 23 Oct 2022 23:13:05 +0900</lastBuildDate><atom:link href="https://v1v1db0y.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>TsukuCTF22 Writup</title>
+        <link>https://v1v1db0y.github.io/p/tsukuctf22-writup/</link>
+        <pubDate>Sun, 23 Oct 2022 23:13:05 +0900</pubDate>
+        
+        <guid>https://v1v1db0y.github.io/p/tsukuctf22-writup/</guid>
+        <description>&lt;img src="https://v1v1db0y.github.io/p/tsukuctf22-writup/logo.png" alt="Featured image of post TsukuCTF22 Writup" /&gt;&lt;h2 id=&#34;結果&#34;&gt;結果&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/screenshot_20221023_225748.png&#34;
+	width=&#34;792&#34;
+	height=&#34;1238&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/screenshot_20221023_225748_hu8ae69d65007bc1ffc410648ba1042938_46646_480x0_resize_box_3.png 480w, https://v1v1db0y.github.io/p/tsukuctf22-writup/screenshot_20221023_225748_hu8ae69d65007bc1ffc410648ba1042938_46646_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;63&#34;
+		data-flex-basis=&#34;153px&#34;
+	
+&gt; &lt;img src=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/screenshot_2022-10-23_233924.png&#34;
+	width=&#34;1220&#34;
+	height=&#34;1122&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/screenshot_2022-10-23_233924_hu59bbc3e26354b8416346bfeaa3800cba_95868_480x0_resize_box_3.png 480w, https://v1v1db0y.github.io/p/tsukuctf22-writup/screenshot_2022-10-23_233924_hu59bbc3e26354b8416346bfeaa3800cba_95868_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;108&#34;
+		data-flex-basis=&#34;260px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;47位でした！正答率ひくすぎぃぃぃぃぃいいい&lt;/p&gt;
+&lt;h2 id=&#34;attack-of-tsukushi&#34;&gt;Attack of Tsukushi&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;つくしくんはある観光地を調査した際に訪れた駅で写真を撮影した。&lt;br&gt;
+果たしてこの写真が撮られた駅はどこだろうか？ フラグは駅の郵便番号（ハイフンなし）を入力して下さい&lt;br&gt;
+e.g. 東京駅の場合は郵便番号が100-0005なのでフラグは TsukuCTF22{1000005} となります。
+&lt;img src=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/Attack_of_Tsukushi.jpg&#34;
+	width=&#34;2857&#34;
+	height=&#34;3131&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/Attack_of_Tsukushi_hu4faec8bd2f69f34203729ad72871e4df_1822574_480x0_resize_q75_box.jpg 480w, https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/Attack_of_Tsukushi_hu4faec8bd2f69f34203729ad72871e4df_1822574_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;91&#34;
+		data-flex-basis=&#34;218px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Googlレンズにぶっこむとそれっぽいリヴァイ兵長がでてきます。
+&lt;img src=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/screenshot_2022-10-23_235704.png&#34;
+	width=&#34;1476&#34;
+	height=&#34;1143&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/screenshot_2022-10-23_235704_hu9f3c8499619e8dc62f18e664cafa72eb_1898106_480x0_resize_box_3.png 480w, https://v1v1db0y.github.io/p/tsukuctf22-writup/screenshot_2022-10-23_235704_hu9f3c8499619e8dc62f18e664cafa72eb_1898106_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;129&#34;
+		data-flex-basis=&#34;309px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;money&#34;&gt;Money&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;どこ？ フラグは写真が撮影された場所の郵便番号(ハイフンを除く)を入れて下さい。&lt;br&gt;
+例えば撮影された場所が東京都庁の場合、郵便番号は163-8001なのでTsukuCTF22{1638001}となります。&lt;br&gt;
+&lt;img src=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/money.jpg&#34;
+	width=&#34;4032&#34;
+	height=&#34;3024&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/money_hu41bdb4d7d92c6ca7cc05069edda1d41d_6605845_480x0_resize_q75_box.jpg 480w, https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/money_hu41bdb4d7d92c6ca7cc05069edda1d41d_6605845_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;リヴァイの問題と同じようにGoogleレンズに入れてみます。
+&lt;img src=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_000932.png&#34;
+	width=&#34;1727&#34;
+	height=&#34;1122&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_000932_hua70bbfe5676cd88024bdbfa2fd6fad98_2207132_480x0_resize_box_3.png 480w, https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_000932_hua70bbfe5676cd88024bdbfa2fd6fad98_2207132_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;153&#34;
+		data-flex-basis=&#34;369px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;出てきたブログを読むと、どうやら金閣寺にあるそうです。&lt;/p&gt;
+&lt;h2 id=&#34;flymetothetsukushi&#34;&gt;FlyMeToTheTsukushi&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;つくし君は、はるばる飛行機で愛するパートナーのもとへやってきました。
+ここはどこの空港かわかりますか？&lt;/p&gt;
+&lt;p&gt;この問題はフラグを10回までしか提出できません。
+※フラグの形式はTsukuCTF22{空港名}です。空港の名前だけを入力してください。(hoge空港の場合、hogeのみがフラグになります)
+&lt;img src=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/airport.jpeg&#34;
+	width=&#34;2919&#34;
+	height=&#34;3023&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/airport_hue05306d44217511d2f12fa270bef5730_1000765_480x0_resize_q75_box.jpeg 480w, https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/airport_hue05306d44217511d2f12fa270bef5730_1000765_1024x0_resize_q75_box.jpeg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;96&#34;
+		data-flex-basis=&#34;231px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;とりあえず、JALの「AIRBUS A350」という機体を探します。
+&lt;img src=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_001458.png&#34;
+	width=&#34;1282&#34;
+	height=&#34;950&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_001458_hub03b6d7fe5e1168cd005568b46669179_1220045_480x0_resize_box_3.png 480w, https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_001458_hub03b6d7fe5e1168cd005568b46669179_1220045_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;134&#34;
+		data-flex-basis=&#34;323px&#34;
+	
+&gt;
+対象経路から「羽田」「伊丹」「新千歳」「福岡」「那覇」まで絞りました。これを全部回答してみます。&lt;/p&gt;
+&lt;h2 id=&#34;inuyama082&#34;&gt;inuyama082&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;つくし君は愛知県犬山市にデートに来た時の思い出の写真を見返しています。
+おいしそうな写真を見つけ、おやつが食べたくなりました。 写真のおやつの名前を教えてください。&lt;br&gt;
+※フラグの形式はTsukuCTF22{XXXXXXX ver.XXXXXX}です。
+&lt;img src=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/inuyama082.jpg&#34;
+	width=&#34;4000&#34;
+	height=&#34;2250&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/inuyama082_hu7850b88b0bede9520d26f00948c5a6cf_1813587_480x0_resize_q75_box.jpg 480w, https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/inuyama082_hu7850b88b0bede9520d26f00948c5a6cf_1813587_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;426px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;息を吸うようにGoogle画像検索にぶち込みます。誰かのブログが出てきます。&lt;br&gt;
+「犬山よあけや」というお店にこのお菓子があるようです。&lt;br&gt;
+なのでメニューにある通り「和チーズケーキ」を送信しまくります。
+しかし名前は「ver」があるので違います。
+もう一度検索に「ver」をつき足して再検索すると&lt;br&gt;
+このツイートに行きつきます。&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;ja&#34; dir=&#34;ltr&#34;&gt;新登場❣️ 和チーズケーキ ver.ココアパウダー😋&lt;br&gt;和チーズケーキに ココアパウダーを トッピング✨&lt;br&gt;和チーズケーキの 新たな味を ぜひご堪能ください🎶&lt;a href=&#34;https://twitter.com/hashtag/%E7%8A%AC%E5%B1%B1%E5%9F%8E%E4%B8%8B%E7%94%BA?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#犬山城下町&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/%E7%8A%AC%E5%B1%B1%E3%82%B0%E3%83%AB%E3%83%A1?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#犬山グルメ&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/%E7%8A%AC%E5%B1%B1%E3%82%AB%E3%83%95%E3%82%A7?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#犬山カフェ&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/%E9%A3%9F%E3%81%B9%E6%AD%A9%E3%81%8D?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#食べ歩き&lt;/a&gt; &lt;a href=&#34;https://t.co/N8uVz2eQTB&#34;&gt;pic.twitter.com/N8uVz2eQTB&lt;/a&gt;&lt;/p&gt;&amp;mdash; 犬山よあけや (@inuyamayoakeya) &lt;a href=&#34;https://twitter.com/inuyamayoakeya/status/1520908426603163649?ref_src=twsrc%5Etfw&#34;&gt;May 1, 2022&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+「和チーズケーキ ver.ココアパウダ」を送信します。これも違います。
+悩んでいると、与えられた画像は抹茶じゃんと思い、「和チーズケーキ ver.ココアパウダ　抹茶」で調べます。
+&lt;p&gt;&lt;img src=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_003713.png&#34;
+	width=&#34;781&#34;
+	height=&#34;152&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_003713_hu314ec49217df7277365569c4e72020d5_34335_480x0_resize_box_3.png 480w, https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_003713_hu314ec49217df7277365569c4e72020d5_34335_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;513&#34;
+		data-flex-basis=&#34;1233px&#34;
+	
+&gt;
+ありました。&lt;/p&gt;
+&lt;h2 id=&#34;sky&#34;&gt;sky&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;帰ってくるあなたが最高のプレゼント。つくし君は電車にガタゴト揺られています。
+次の停車駅で降りるようなのですが、どこかわかりますか？
+※フラグの形式はTsukuCTF22{次の停車駅}です。公式サイトの表記を採用します(スペースは含めません)。
+&lt;img src=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/sky.jpg&#34;
+	width=&#34;4000&#34;
+	height=&#34;2250&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/sky_hu7850b88b0bede9520d26f00948c5a6cf_4591567_480x0_resize_q75_box.jpg 480w, https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/sky_hu7850b88b0bede9520d26f00948c5a6cf_4591567_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;426px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;とりあえず、画像から得られる情報を整理します&lt;br&gt;
+・CentXという文字&lt;br&gt;
+・Windという雑誌&lt;br&gt;
+・ガラスに反射している赤い記号&lt;br&gt;
+・Wi-Fiが利用できるマークがある&lt;br&gt;
+最初は新幹線の中という線でシート席の色を調べていましたが見当たらず、やめました。&lt;br&gt;
+「Wind雑誌　新幹線」で調べてみるとyahoo知恵袋で手がかりがつかめました。
+どうやら新幹線ではなく「名鉄ミュースカイ」の中らしかったです。
+そこで名鉄ミュースカイのシートについてのブログを読んで、最後の記事に「名鉄名古屋」という駅名標の画像があったので送信しました。&lt;br&gt;
+確かこれがFlagでしたが、名鉄ミュースカイの停車駅は結構多かったのでまぐれだったなと思います&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;station&#34;&gt;station&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;つくし君はとある駅で友達を待っています。さて、つくし君はどこの駅にいるでしょうか？
+TsukuCTF22{駅名(漢字、平仮名、英語可)}
+&lt;img src=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/station.jpg&#34;
+	width=&#34;607&#34;
+	height=&#34;1315&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/station_hu9f7d937733a3f788d24a6d3d529fd1ad_471302_480x0_resize_q75_box.jpg 480w, https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/station_hu9f7d937733a3f788d24a6d3d529fd1ad_471302_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;46&#34;
+		data-flex-basis=&#34;110px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;画像から分かるのは
+・壁の絵&lt;br&gt;
+・緑のライン&lt;br&gt;
+・東豊線&lt;br&gt;
+・女性車両らしい&lt;br&gt;
+・なんか右上に「1[]」って書いてある&lt;br&gt;
+東豊線は北海道にある市営地下鉄らしいです。路線図を見ると「大通駅」がほかの南北線と東西線を結んでいるようです。&lt;br&gt;
+そして壁に書いてあるのは「大通り駅」から見て「新さっぽろ駅」に向かうまでの路線だと考えました。&lt;br&gt;
+また、札幌市営地下鉄の公式サイトには女性車両についてこのように記述されていました。これから東西線であろうと推定しました。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/jfiowea.png&#34;
+	width=&#34;1732&#34;
+	height=&#34;1312&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/jfiowea_hudc06f356f119d2894df984ef514bb09a_191887_480x0_resize_box_3.png 480w, https://v1v1db0y.github.io/p/tsukuctf22-writup/jfiowea_hudc06f356f119d2894df984ef514bb09a_191887_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;132&#34;
+		data-flex-basis=&#34;316px&#34;
+	
+&gt;
+これらからFlag「大通り駅」ではないか。違いました。&lt;br&gt;
+ではひとつ前に駅の「西11丁目」ですか？？ これでflagをとってしまったと思います。&lt;/p&gt;
+&lt;h2 id=&#34;douro&#34;&gt;douro&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;旅行中のつくし君は迷子になってしまったようです。うつむいています。送られてきた写真から場所を特定できますか？&lt;br&gt;
+※フラグの形式はTsukuCTF22{緯度 _ 経度}です。ただし、緯度経度は十進法で小数点以下五桁目を切り捨てたものとします。&lt;br&gt;
+&lt;img src=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/douro.jpg&#34;
+	width=&#34;4000&#34;
+	height=&#34;2250&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/douro_hu7850b88b0bede9520d26f00948c5a6cf_4856260_480x0_resize_q75_box.jpg 480w, https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/douro_hu7850b88b0bede9520d26f00948c5a6cf_4856260_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;426px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;この画像を拡大してみると、
+&lt;img src=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_011251.png&#34;
+	width=&#34;1283&#34;
+	height=&#34;656&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_011251_hu54f775f3094de7ecc8dfe5f016c5c915_874420_480x0_resize_box_3.png 480w, https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_011251_hu54f775f3094de7ecc8dfe5f016c5c915_874420_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;195&#34;
+		data-flex-basis=&#34;469px&#34;
+	
+&gt;
+自分には 「よいはもーる　1990」と読めました。これをそのまま調べると四五百商店街(よいほモール)がの公式サイトに画像と同じタイルが見つかります。&lt;br&gt;
+散歩ブログ的なものを読んで、このタイルがどこにあるかを探します。
+&lt;img src=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_025648.png&#34;
+	width=&#34;2910&#34;
+	height=&#34;1852&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_025648_hu64d2812c2ae340b8cfe68665cca6f531_4717791_480x0_resize_box_3.png 480w, https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_025648_hu64d2812c2ae340b8cfe68665cca6f531_4717791_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;157&#34;
+		data-flex-basis=&#34;377px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;where&#34;&gt;Where&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;北海道に住んでいるつくしさんは東京旅行に行った際に高層ビルの窓から写真を撮りました。&lt;br&gt;
+でも撮影した場所を忘れてしまったようです。この写真が撮影された場所について建物名を教えてあげてください。&lt;br&gt;
+フラグはこの建物の開業日(YYYY/MM/DD)です。&lt;br&gt;
+たとえば、東京スカイツリーの開業日は2012年5月22日なので、フラグはTsukuCTF22{2012/05/22}となります。&lt;br&gt;
+&lt;img src=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/Where.jpg&#34;
+	width=&#34;4032&#34;
+	height=&#34;3024&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/Where_hu7b674215ffbe9060f1a029451952bfef_1468430_480x0_resize_q75_box.jpg 480w, https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/Where_hu7b674215ffbe9060f1a029451952bfef_1468430_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;とりあえず、google画像検索をしてみるとこの画像で一番高いビルは「渋谷スイカ」ということが分かりました。確かに画像を拡大してみても「SHIBUYA SKY」の文字が確認できます。
+また、この画像からは左奥に東京タワーが見えます。この条件からの角度をGoogle Erthを使って調べると
+&lt;img src=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/screenshot_20221022_153459.png&#34;
+	width=&#34;2242&#34;
+	height=&#34;1268&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/screenshot_20221022_153459_huf0506910a8db5317127fbfadd19693a0_4118132_480x0_resize_box_3.png 480w, https://v1v1db0y.github.io/p/tsukuctf22-writup/screenshot_20221022_153459_huf0506910a8db5317127fbfadd19693a0_4118132_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;176&#34;
+		data-flex-basis=&#34;424px&#34;
+	
+&gt;
+見えるであろうビルを答えますが、このビルは5回改装工事をしており、そのため5回リニューアルオープンしています。この場合一番最初の開業日がflagだったみたいです。&lt;/p&gt;
+&lt;h2 id=&#34;gorgeous-interior-bus&#34;&gt;Gorgeous Interior Bus&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;観光地に来たつくし君は、豪華なバスを見かけたので、それに乗って観光することにしました。
+その時、つくし君のお母さんから「どこにいるの？」と連絡が着ましたが、
+おっちょこちょいなつくし君は、観光地の名前も、乗っているバスの路線も忘れてしまい、
+とっさに車内の写真を撮って、「ここ」と返信しました。 つくしくんはどこにいるのでしょうか？
+つくしくんが写真を撮ったところに最も近い交差点の名前を特定してください。&lt;br&gt;
+※フラグの形式はTsukuCTF22{交差点の名前}です。
+&lt;img src=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/GorgeousInteriorBus.jpg&#34;
+	width=&#34;4032&#34;
+	height=&#34;2268&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/GorgeousInteriorBus_hua4fcd0789b660cf483a8453f563bfc2b_3397917_480x0_resize_q75_box.jpg 480w, https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/GorgeousInteriorBus_hua4fcd0789b660cf483a8453f563bfc2b_3397917_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;426px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;google画像検索によりバスは熱海を走る「湯～遊～バス」と分かります。&lt;br&gt;
+湯～遊～バスの周回ルートを調べると熱海駅を出発から出発するらしいです。
+湯～遊～バスが停車するバス停表を見ながら、画像の奥のパネルにある文字と見比べます。&lt;br&gt;
+画像には「親水公園」「銀座」と書いてあり、次のバス停は「銀座」だと推測できます。
+Googleストリートビューでバス停銀座から湯～遊～バスのルートを逆走します。
+するとこの看板がある交差点があります。
+&lt;img src=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_013408.png&#34;
+	width=&#34;642&#34;
+	height=&#34;328&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_013408_hu703f2bf8c18ce30f9040ba1cd0f90803_328553_480x0_resize_box_3.png 480w, https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_013408_hu703f2bf8c18ce30f9040ba1cd0f90803_328553_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;195&#34;
+		data-flex-basis=&#34;469px&#34;
+	
+&gt; &lt;img src=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_022834.png&#34;
+	width=&#34;1208&#34;
+	height=&#34;756&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_022834_hu70eb3c5b7818a61fb11fe9caa2632927_1490663_480x0_resize_box_3.png 480w, https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_022834_hu70eb3c5b7818a61fb11fe9caa2632927_1490663_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;159&#34;
+		data-flex-basis=&#34;383px&#34;
+	
+&gt;
+&lt;img src=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_030510.png&#34;
+	width=&#34;1024&#34;
+	height=&#34;576&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_030510_hu5d88ecb914ca2440d0c454219fb5db86_1103857_480x0_resize_box_3.png 480w, https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_030510_hu5d88ecb914ca2440d0c454219fb5db86_1103857_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;426px&#34;
+	
+&gt;
+&lt;br&gt;
+この問題めっちゃ旅行行きたくなりました。。。&lt;/p&gt;
+&lt;h2 id=&#34;bringer_of_happpiness&#34;&gt;Bringer_of_happpiness&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;つくしくんは荷物を運び終えて休憩してるときに撮った写真。さて撮影場所はどこだろう？
+※フラグの形式はTsukuCTF22{緯度 _ 経度}です。ただし、緯度経度は十進法で小数点以下五桁目を切り捨てたものとします。
+&lt;img src=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/Bringer_of_happiness.jpg&#34;
+	width=&#34;2980&#34;
+	height=&#34;2129&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/Bringer_of_happiness_hu621a562dc37eaef74cdb0eb2e52adc5d_851912_480x0_resize_q75_box.jpg 480w, https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/Bringer_of_happiness_hu621a562dc37eaef74cdb0eb2e52adc5d_851912_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;139&#34;
+		data-flex-basis=&#34;335px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;画像から分かることは
+・黄色い電車&lt;br&gt;
+・j- なんとかかんとか　というスーパーマーケット？？&lt;br&gt;
+・パチンコ店ののぼり&lt;br&gt;
+・踏切&lt;br&gt;
+・駅名が書かれてるところに、変な眉毛みたいなのが書かれてある&lt;br&gt;
+&lt;br&gt;
+これではわかりそうにないので黄色い電車の特徴をもっと詳しく見ていきます。&lt;br&gt;
+・後ろの窓が３つ&lt;br&gt;
+・なんか丸いのが付いてる&lt;br&gt;
+・左になんか書いてある？&lt;br&gt;
+&lt;br&gt;
+これらから「黄色い電車」で調べた画像を見ていきます。すると島原鉄道がそれっぽいなと思いました。&lt;br&gt;
+公式サイトから黄色い電車が停まる各駅がどんな風景なのかを見ていくと、終点に眉毛みたいな駅名標の画像がありました。(眉毛はスポットライトだったみたい)&lt;br&gt;
+&lt;img src=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_023400.png&#34;
+	width=&#34;1560&#34;
+	height=&#34;1013&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_023400_hu9861a0f8d10398940c2d04595fdcff60_2959661_480x0_resize_box_3.png 480w, https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_023400_hu9861a0f8d10398940c2d04595fdcff60_2959661_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;153&#34;
+		data-flex-basis=&#34;369px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;desk&#34;&gt;Desk&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;つくし君の大好きなお姉さんのデスクを見学させてもらったよ。 さて、このデスクはどこにあるのだろうか?&lt;br&gt;
+フラグ形式は写真が撮影された場所の郵便番号(ハイフンを除く)を入れて下さい。
+例えば撮影された場所が東京都庁の場合、郵便番号は163-8001なので TsukuCTF22{1638001} となります。
+&lt;img src=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/Desk.jpg&#34;
+	width=&#34;1525&#34;
+	height=&#34;1793&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/Desk_hu3e4f7e0110611801d8659b9bdae30a34_450382_480x0_resize_q75_box.jpg 480w, https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/Desk_hu3e4f7e0110611801d8659b9bdae30a34_450382_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;85&#34;
+		data-flex-basis=&#34;204px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;これはテレパシー使ってますが、クリアファイルの画像を見て、沖縄かな？と思ってしまいました。
+沖縄の地図と一致しているため沖縄であることまでは確定しました。&lt;br&gt;
+画像で気になったのは&lt;br&gt;
+・右下にキャラクター&lt;br&gt;
+・なんか緑いっぱいい&lt;br&gt;
+・○○のデスク　ハートのロゴ？&lt;br&gt;
+・奥に島みたいなのがある&lt;/p&gt;
+&lt;p&gt;ハートにモザイクがかからなかったのが気になり、「沖縄　ハート　ロゴ」で調べました。するとこれは南城市のロゴだと分かります。&lt;br&gt;
+また、キャラクターは南城市のマスコットキャラクターである「なんじぃ」だと分かりました。
+また、島に関しても南城市の目に前には久高島という島があります。しかしこれは西原町という線も捨てきれないなと思いました。
+&lt;img src=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_015825.png&#34;
+	width=&#34;791&#34;
+	height=&#34;500&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_015825_hu5a375058374539f72ddec126b39085c6_140138_480x0_resize_box_3.png 480w, https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_015825_hu5a375058374539f72ddec126b39085c6_140138_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;158&#34;
+		data-flex-basis=&#34;379px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;南城市のブログを読んでいて、こんなデスクがあるのはどんな人かを考えたときに観光課だろうと思いつきました。&lt;br&gt;
+Google Mapで南城市の観光課を調べてみていくとありました。&lt;/p&gt;
+&lt;h2 id=&#34;takaitakai&#34;&gt;TakaiTakai&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;日本の町は美しい。撮影地を答えてください。フラグはこの建物の開業日(YYYY/MM/DD)です。&lt;br&gt;
+たとえば、東京スカイツリーの開業日は2012年5月22日なので、フラグはTsukuCTF22{2012/05/22}となります。
+&lt;img src=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/TakaiTakai.jpg&#34;
+	width=&#34;720&#34;
+	height=&#34;540&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/TakaiTakai_hu07e8f8bcbbae10ba15a01627fd17c6c3_167004_480x0_resize_q75_box.jpg 480w, https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/TakaiTakai_hu07e8f8bcbbae10ba15a01627fd17c6c3_167004_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;画像を眺めていて何もひらめきませんでしたが、多分東京なんだろうな～と思いながら、手前に見えるビルの青いロゴに注目して調べていきました。
+&lt;img src=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_020629.png&#34;
+	width=&#34;1222&#34;
+	height=&#34;1002&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_020629_hub12a9def09262d21759bbbff60f66724_1452419_480x0_resize_box_3.png 480w, https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_020629_hub12a9def09262d21759bbbff60f66724_1452419_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;121&#34;
+		data-flex-basis=&#34;292px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;「青いロゴ　会社　日本」で調べて画像を見ていくと、「日本システムウエア株式会社」がそれっぽいなと思いました。
+Google Erthでこのビルを確認しにいきます。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/screenshot_20221022_174025.png&#34;
+	width=&#34;1732&#34;
+	height=&#34;1271&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/screenshot_20221022_174025_hu8f355dd4a621ba07f84023f73dedfd91_3994468_480x0_resize_box_3.png 480w, https://v1v1db0y.github.io/p/tsukuctf22-writup/screenshot_20221022_174025_hu8f355dd4a621ba07f84023f73dedfd91_3994468_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;136&#34;
+		data-flex-basis=&#34;327px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;ありました。日本システムウエア株式会社のビルを見ることができる建物がフラグです。&lt;/p&gt;
+&lt;h2 id=&#34;utsukushii&#34;&gt;uTSUKUSHIi&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;私は世界一可愛い猫ちゃんの写真を見つけました。この猫ちゃんの生年月日を答えてください。&lt;br&gt;
+フラグフォーマットは TsukuCTF22{YYYY/MM/DD} です。&lt;br&gt;
+&lt;img src=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/meow.jpg&#34;
+	width=&#34;3024&#34;
+	height=&#34;4032&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/meow_hub46d99954e8c7d76e7ae61864f383f6c_4539352_480x0_resize_q75_box.jpg 480w, https://v1v1db0y.github.io/p/tsukuctf22-writup/Challenges/meow_hub46d99954e8c7d76e7ae61864f383f6c_4539352_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;75&#34;
+		data-flex-basis=&#34;180px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;もう、最初見たときは情報量少なすぎて意味わかりませんでしたが、情報を整理することでなんとなく見えてきました。&lt;br&gt;
+・ねこじゃらし&lt;br&gt;
+・黄色いソファ&lt;br&gt;
+・かご&lt;br&gt;
+・灰色と白の猫&lt;br&gt;
+&lt;br&gt;
+フラグの形式とねこじゃらしから画像は猫カフェではないかと推測しました。&lt;br&gt;
+とりあえず、猫の種類を調べようとGoogle画像検索で調べます。すると
+「ブリティッシュショートヘア」だと分かりました。ブリティッシュショートヘア(グレー＆ホワイト)がいる猫カフェを見つけようとしましたがしかし見つかりませんでした。&lt;br&gt;
+方向を変えて「猫カフェ　黄色いソファ」で検索しました。すると本当に雰囲気がよさそうな黄色いソファのある猫カフェが京都・河原町に新店舗オープンするという記事を見つけました。
+&lt;img src=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_024604.png&#34;
+	width=&#34;1038&#34;
+	height=&#34;423&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_024604_hu62e7b72c00d4d015c477604840dec851_873267_480x0_resize_box_3.png 480w, https://v1v1db0y.github.io/p/tsukuctf22-writup/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88_2022-10-24_024604_hu62e7b72c00d4d015c477604840dec851_873267_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;245&#34;
+		data-flex-basis=&#34;588px&#34;
+	
+&gt;
+公式サイトから画像と同じような柄をした猫を見を見つけられました。&lt;/p&gt;
+&lt;h2 id=&#34;感想&#34;&gt;感想&lt;/h2&gt;
+&lt;p&gt;常設CTFやOSINT問題のWritupを読んでみたりはしたことありましたが、まともに出たCTFは初めてになります。なのでWritupを書くのも初めてです。今回はガチで挑みました。
+実力としては正答率が気になりました。実際のOSINTで出題者の意図をかんがえて&amp;hellip;なんてことはありませんし、ここまでの間違えだと推測したものが違ってしまうと一生回答にたどり着かないなと思いました。&lt;/p&gt;
+&lt;br&gt;
+なにか著作権的にまずいものがあれば知らせてください。早急に削除します。
+</description>
+        </item>
+        <item>
+        <title>Ventoy</title>
+        <link>https://v1v1db0y.github.io/p/ventoy/</link>
+        <pubDate>Thu, 13 Oct 2022 16:08:02 +0900</pubDate>
+        
+        <guid>https://v1v1db0y.github.io/p/ventoy/</guid>
+        <description>&lt;img src="https://v1v1db0y.github.io/p/ventoy/Ventory_image.png" alt="Featured image of post Ventoy" /&gt;&lt;p&gt;私はLinuxをインストールするときにUSBをフォーマットしてから新しくISOを焼き直す。
+また違うディストリビューションをインストールしたくなったら書き直す。
+これを繰り返していました。GRUBでbootを選択できますし、理論上は可能なんだろうなとは
+ぼんやり考えていましたが、結構前にツイッターで知ったので試してみました。&lt;/p&gt;
+&lt;h2 id=&#34;ダウンロードする&#34;&gt;ダウンロードする&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.ventoy.net/en/download.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.ventoy.net/en/download.html&lt;/a&gt;&lt;br&gt;
+WindowsとLinuxに対応しています。LinuxはCLIでもできるみたいです。&lt;/p&gt;
+&lt;h2 id=&#34;インストールする&#34;&gt;インストールする&lt;/h2&gt;
+&lt;p&gt;私はWindows環境で行いました。ダウンロードしたZipファイルを解凍して、Ventoy2Disk.exeを実行します。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://v1v1db0y.github.io/p/ventoy/Ventoy2Disk.png&#34;
+	width=&#34;550&#34;
+	height=&#34;420&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/ventoy/Ventoy2Disk_hu7817c582884544546709b25ae10eac34_49625_480x0_resize_box_3.png 480w, https://v1v1db0y.github.io/p/ventoy/Ventoy2Disk_hu7817c582884544546709b25ae10eac34_49625_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;130&#34;
+		data-flex-basis=&#34;314px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;導入&amp;quot;で選択したＵＳＢにVentoyをインストールします。&lt;br&gt;
+&amp;ldquo;パッケージ中のVentoy&amp;quot;はリリースされている最新のVentoyのバージョン&lt;br&gt;
+&amp;ldquo;機器中のVentoy&amp;quot;は選択した機器にインストールされているVentoyのバージョン&lt;/p&gt;
+&lt;h2 id=&#34;ventoyで起動させたいファイルを入れていく&#34;&gt;Ventoyで起動させたいファイルを入れていく&lt;/h2&gt;
+&lt;p&gt;インストールが完了したらファイルマネージャーからVentoyというボリュームが現れます。&lt;br&gt;
+&lt;img src=&#34;https://v1v1db0y.github.io/p/ventoy/Exproler.png&#34;
+	width=&#34;268&#34;
+	height=&#34;501&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/ventoy/Exproler_huc74799e4289859bfdc192d0757de7c30_22595_480x0_resize_box_3.png 480w, https://v1v1db0y.github.io/p/ventoy/Exproler_huc74799e4289859bfdc192d0757de7c30_22595_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;53&#34;
+		data-flex-basis=&#34;128px&#34;
+	
+&gt;&lt;br&gt;
+Ventoyの中は空になっていると思います。そこに起動させたいISOファイルなんかをぶっこんでいきます。
+UEFIでVentoyを選択して起動したら成功です。お疲れさまでした。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>pompompurinとBFの仲間たち</title>
+        <link>https://v1v1db0y.github.io/p/pompompurin%E3%81%A8bf%E3%81%AE%E4%BB%B2%E9%96%93%E3%81%9F%E3%81%A1/</link>
+        <pubDate>Thu, 15 Sep 2022 15:53:18 +0900</pubDate>
+        
+        <guid>https://v1v1db0y.github.io/p/pompompurin%E3%81%A8bf%E3%81%AE%E4%BB%B2%E9%96%93%E3%81%9F%E3%81%A1/</guid>
+        <description>&lt;p&gt;pompompurinは過去にFBIのメールをハッキング。企業の顧客情報のリークなどを行っている脅威アクターです。&lt;br&gt;
+FBIのメールのハッキングした後から大きく知名度が高くなったのではないかと思っています。
+RaidForum閉鎖後にBreachForumと呼ばれるハッキングフォーラムを運営しています。
+個人的にこのpompompurinについて気になったので調べてみました。&lt;/p&gt;
+&lt;h2 id=&#34;国籍について&#34;&gt;国籍について&lt;/h2&gt;
+&lt;p&gt;彼のツイッターのプロフィール欄は日本語であり、東京在住とも記載されていますが、ツイートしている言語はほとんど英語です。
+&lt;img src=&#34;https://v1v1db0y.github.io/p/pompompurin%E3%81%A8bf%E3%81%AE%E4%BB%B2%E9%96%93%E3%81%9F%E3%81%A1/pomtwitter.png&#34;
+	width=&#34;960&#34;
+	height=&#34;1174&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/pompompurin%E3%81%A8bf%E3%81%AE%E4%BB%B2%E9%96%93%E3%81%9F%E3%81%A1/pomtwitter_hu501333da6921f962c2ca787d0b5692d6_476908_480x0_resize_box_3.png 480w, https://v1v1db0y.github.io/p/pompompurin%E3%81%A8bf%E3%81%AE%E4%BB%B2%E9%96%93%E3%81%9F%E3%81%A1/pomtwitter_hu501333da6921f962c2ca787d0b5692d6_476908_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;81&#34;
+		data-flex-basis=&#34;196px&#34;
+	
+&gt;
+過去に日本語のツイートもチラホラありますが、2011年で更新が途絶えて2022年からずっと英語でツイートを行っています。
+@xmlというアカウント名を得るためにハッキングを行ったのかもしれません。&lt;/p&gt;
+&lt;p&gt;SOCRadarという米国のサイバーセキュリティ企業のブログでpompompurinについての記事がありました。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;RaidForums was not the only forum he was a member of; he was also a member of Russian dark web forums such as XSS. Although we do not know
+where he is from, we know that he speaks Russian. It is safe to assume he is from one of the Russian-speaking countries.&lt;br&gt;
+— &lt;cite&gt;SOCRadar&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/cite&gt;&lt;/p&gt;
+&lt;p&gt;[訳]RaidForumsだけが彼のメンバーではなく、XSSのようなロシアのダークウェブフォーラムのメンバーでもあったのです。彼の出身地は不明ですが、
+ロシア語を話すことは分かっています。ロシア語圏のいずれかの国の出身と見て間違いないでしょう。 -Deep翻訳-
+&lt;img src=&#34;https://socradar.io/wp-content/uploads/2022/07/pompompurin-1.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;XSS[.]isはキリル文字を使う主にロシアや東ヨーロッパ向けのハッキングフォーラムです。彼がロシア語でスレッドを立ててることから
+ロシア圏の脅威アクターだと推測されています。&lt;/p&gt;
+&lt;h2 id=&#34;pomのアカウントとかいろいろ&#34;&gt;Pomのアカウントとかいろいろ&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[Twitter]   
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        @xml                 (www.Twitter.com/@xml)   
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        @pompompuri_in(凍結)  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            https://archive.ph/https://twitter.com/pompompur_in  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            https://web.archive.org/web/20210615000000*/https://twitter.com/pompompur_in  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        @past
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[Ÿ HŸPE]  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        https://yhype.me/github/@pompompurins  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;### 多分pomの友達
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- dedale
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[Website]https://web.archive.org/web/20220720081436/https://baph.is/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[PGP]https://web.archive.org/web/20220808165105/https://baph.is/pgp.txt
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;- psauxx 
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;The above quote is &lt;a class=&#34;link&#34; href=&#34;https://socradar.io/dark-web-threat-profile-pompompurin/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;SOCRadar blog&lt;/a&gt; July 21, 2022&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        </item>
+        <item>
+        <title>Vimの使い方</title>
+        <link>https://v1v1db0y.github.io/p/vim%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/</link>
+        <pubDate>Tue, 13 Sep 2022 10:26:23 +0900</pubDate>
+        
+        <guid>https://v1v1db0y.github.io/p/vim%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/</guid>
+        <description>&lt;img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Vimlogo.svg" alt="Featured image of post Vimの使い方" /&gt;&lt;h2 id=&#34;イントロ&#34;&gt;イントロ&lt;/h2&gt;
+&lt;p&gt;自分はTails Linuxを触ってるときにVimを初めて触りました。最初は
+&lt;em&gt;&lt;strong&gt;終了もできません&lt;/strong&gt;&lt;/em&gt;
+が触っているうちに慣れてきてキーバインドが癖になり、ないと生きていけなくなります。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;起動方法&#34;&gt;起動方法&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;vim
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;これで起動できます。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;vim [ファイル名]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;これで名前のついたファイルを編集できます。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;移動方法&#34;&gt;移動方法&lt;/h2&gt;
+&lt;p&gt;移動には
+&lt;strong&gt;[h,j,k,l]&lt;/strong&gt;
+を使います。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;		[上に移動]
+			k
+[右に移動] h       l  [左に移動]
+			j
+		[下に移動]	
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;最初は慣れないかもしれませんが、キーがホームポジションに近いように設定されています。
+そのため慣れるととても扱いやすくなります。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;基本操作&#34;&gt;基本操作&lt;/h2&gt;
+&lt;p&gt;操作の基本的はコロンを入力してコマンドを入力します。&lt;/p&gt;
+&lt;h3 id=&#34;終了&#34;&gt;終了&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;:q
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;保存せずにvimを終了させます。&lt;/p&gt;
+&lt;h3 id=&#34;保存&#34;&gt;保存&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;:w
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;編集中のファイルを保存します。&lt;/p&gt;
+&lt;h3 id=&#34;保存して終了&#34;&gt;保存して終了&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;:wq
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;保存してからvimを終了します。&lt;/p&gt;
+&lt;h3 id=&#34;保存しないで終了&#34;&gt;保存しないで終了&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;:q!
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;保存しないでvimを終了します。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;インサートモード&#34;&gt;インサートモード&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://v1v1db0y.github.io/p/vim%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/insert.png&#34;
+	width=&#34;968&#34;
+	height=&#34;366&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/vim%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/insert_huee3a7193e36bb3be6b06fc0fe5f9e19b_5486_480x0_resize_box_3.png 480w, https://v1v1db0y.github.io/p/vim%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/insert_huee3a7193e36bb3be6b06fc0fe5f9e19b_5486_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;264&#34;
+		data-flex-basis=&#34;634px&#34;
+	
+&gt;
+インサートモードは文字を入力しますよー、というモードです。
+コマンドを入力すると画像のように右下にINSERTと表示されます。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;i
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;iを押すと選択中の前の文字にカーソルが当てられて文字を挿入できるようになります。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;a
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;aを押すと選択中の後の文字にカーソルが当てられて文字を挿入できるようになります。&lt;/p&gt;
+&lt;h4 id=&#34;インサートモードをぬける&#34;&gt;インサートモードをぬける&lt;/h4&gt;
+&lt;p&gt;インサートモードを抜けるときはキーボード左上のESCキーを押します。&lt;br&gt;
+右下に表示されていたINSERTの文字が消えていたら抜けられています。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;行番号を表示する&#34;&gt;行番号を表示する&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;:set number
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;省略することもできます。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;:set nu
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;これでも同じ結果になります。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;vimの設定ファイル&#34;&gt;Vimの設定ファイル&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;:set nu&lt;/code&gt;などは一度vimを抜けてから起動すると元に戻ってしまいます。そのためvimの設定ファイル
+に予め記述する必要があります。&lt;br&gt;
+Vimを設定するためのファイルは&lt;code&gt;~/.vimrc&lt;/code&gt;にあります。もしもなかったらファイルを作成しましょう。&lt;/p&gt;
+&lt;p&gt;作成が出来たら&lt;code&gt;vim  ~/.vimrc&lt;/code&gt;で編集しましょう。&lt;/p&gt;
+&lt;p&gt;書き方はコマンドで打っていることをそのまま書けばいいだけです。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;number&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;vimmer&#34;&gt;Vimmer&lt;/h2&gt;
+&lt;p&gt;以上のことが出来ればファイルをちょこっとだけ編集する分には問題ないと思います。
+この先はVIMをもっと極めたい人向けです。&lt;/p&gt;
+&lt;h3 id=&#34;vimtutor&#34;&gt;vimtutor&lt;/h3&gt;
+&lt;p&gt;Vimに入っているチュートリアルです。日本語化もできたはずです。&lt;/p&gt;
+&lt;h2 id=&#34;vi-vim-neovim-gvim&#34;&gt;vi Vim NeoVim GVim&lt;/h2&gt;
+</description>
+        </item>
+        <item>
+        <title>Arch Linuxのインストール</title>
+        <link>https://v1v1db0y.github.io/p/arch-linux%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</link>
+        <pubDate>Sat, 10 Sep 2022 01:27:17 +0900</pubDate>
+        
+        <guid>https://v1v1db0y.github.io/p/arch-linux%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</guid>
+        <description>&lt;img src="https://archlinux.org/static/logos/archlinux-logo-light-scalable.1ae4cc2e2469.svg" alt="Featured image of post Arch Linuxのインストール" /&gt;&lt;h2 id=&#34;イントロダクション&#34;&gt;イントロダクション&lt;/h2&gt;
+&lt;p&gt;Linuxでしばらく遊んでいるとArch Linuxに出会うと思います。&lt;/p&gt;
+&lt;p&gt;Arch Linuxはシンプル、ミニマリズムに焦点を当てたLinuxディストリビューションです。
+インストールはCUI操作であり、コマンドを覚えたての初心者からするととっつきにくい
+ディストリビューションです。&lt;br&gt;
+しかしインストールをしてみるだけで、普段パソコンの電源ボタンを押してから
+OSのロック画面を開くまでの間に何が行われているか感覚的に掴むことができます。
+Linuxをもっと知りたい初心者向けに書いていきますので是非とも挑戦してください。&lt;/p&gt;
+&lt;h2 id=&#34;arch-linuxについて&#34;&gt;Arch Linuxについて&lt;/h2&gt;
+&lt;p&gt;Arch Linuxの特徴としてローリングリリースを採用しています。
+ローリングリリースとはパッケージを頻繫に更新することで常に
+最新のパッケージを利用し続けるということです。
+そのためOSのバージョンという概念がありません。&lt;/p&gt;
+&lt;h2 id=&#34;インストールする&#34;&gt;インストールする。&lt;/h2&gt;
+&lt;h3 id=&#34;usbにarchインストールメディアをインストールしていきます&#34;&gt;USBにArchインストールメディアをインストールしていきます。&lt;/h3&gt;
+&lt;p&gt;ここはほかのディストリビューションとあまり変わりません。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.archlinux.jp/download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Arch Linuxをダウンロード&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;好みの日本サーバーを選択してイメージファイルをダウンロードしてください。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://v1v1db0y.github.io/p/arch-linux%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/screenshot-2022-09-10.png&#34;
+	width=&#34;813&#34;
+	height=&#34;637&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/arch-linux%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/screenshot-2022-09-10_hu97f93144658833dab2e1bf1ba9736599_132946_480x0_resize_box_3.png 480w, https://v1v1db0y.github.io/p/arch-linux%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/screenshot-2022-09-10_hu97f93144658833dab2e1bf1ba9736599_132946_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;ファイル名の末尾に.isoとあるファイルを選択してください。&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;127&#34;
+		data-flex-basis=&#34;306px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;インストールが完了したら、1GB以上のUSBをパソコンに差し込んでRufus又はEtcherでイメージファイルを
+焼いていきます。&lt;/p&gt;
+&lt;h2 id=&#34;続きはいつか書きます&#34;&gt;続きはいつか書きます。&lt;/h2&gt;
+</description>
+        </item>
+        <item>
+        <title>悲しくなる瞬間</title>
+        <link>https://v1v1db0y.github.io/p/%E6%82%B2%E3%81%97%E3%81%8F%E3%81%AA%E3%82%8B%E7%9E%AC%E9%96%93/</link>
+        <pubDate>Thu, 08 Sep 2022 18:16:55 +0900</pubDate>
+        
+        <guid>https://v1v1db0y.github.io/p/%E6%82%B2%E3%81%97%E3%81%8F%E3%81%AA%E3%82%8B%E7%9E%AC%E9%96%93/</guid>
+        <description>&lt;p&gt;最近髪を切りに行って失敗しました。前髪がかなり薄くなってショックでここ数日うなだれています。
+そこで悲しくなる瞬間についての対処方法について考えてみます。&lt;/p&gt;
+&lt;h3 id=&#34;音楽を聴く&#34;&gt;音楽を聴く&lt;/h3&gt;
+&lt;p&gt;簡単で効果を期待できる方法です。今自分が一番好きな曲を音楽を聴いてみましょう。もしも好きな曲がなかったら
+AFNラジオを聴いてみてください。トレンドの曲が常に流れています。&lt;/p&gt;
+&lt;h3 id=&#34;寝る&#34;&gt;寝る&lt;/h3&gt;
+&lt;p&gt;個人的に一番効果的だと思える方法です。悲しみを抱えながら寝転んでいればいつか眠りにつくでしょう。
+いやな現実からログアウトして夢の世界に入りましょう。&lt;/p&gt;
+&lt;h3 id=&#34;趣味に打ち込む&#34;&gt;趣味に打ち込む&lt;/h3&gt;
+&lt;p&gt;趣味に打ち込んでみるのもいいかもしれません。自分の好きなことをしているうちに悲しい気持ちも忘れることが
+できるかもしれません。また趣味をしていることで喜びに繋がるかもしれません。&lt;/p&gt;
+&lt;h3 id=&#34;外出をする&#34;&gt;外出をする&lt;/h3&gt;
+&lt;p&gt;最初は気が重いかもしれませんが外にでて空気を吸うことで悲しみから解放されるかもしれません。
+目的地を決めてそこに向かうことで新しい出会いがあるかもしれない。そんな期待を大きく持ってみるといいかも
+しれません。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Markdown Syntax Guide</title>
+        <link>https://v1v1db0y.github.io/p/markdown-syntax-guide/</link>
+        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://v1v1db0y.github.io/p/markdown-syntax-guide/</guid>
+        <description>&lt;img src="https://v1v1db0y.github.io/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post Markdown Syntax Guide" /&gt;&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;
+&lt;h2 id=&#34;headings&#34;&gt;Headings&lt;/h2&gt;
+&lt;p&gt;The following HTML &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt;—&lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; elements represent six levels of section headings. &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; is the highest section level while &lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; is the lowest.&lt;/p&gt;
+&lt;h1 id=&#34;h1&#34;&gt;H1&lt;/h1&gt;
+&lt;h2 id=&#34;h2&#34;&gt;H2&lt;/h2&gt;
+&lt;h3 id=&#34;h3&#34;&gt;H3&lt;/h3&gt;
+&lt;h4 id=&#34;h4&#34;&gt;H4&lt;/h4&gt;
+&lt;h5 id=&#34;h5&#34;&gt;H5&lt;/h5&gt;
+&lt;h6 id=&#34;h6&#34;&gt;H6&lt;/h6&gt;
+&lt;h2 id=&#34;paragraph&#34;&gt;Paragraph&lt;/h2&gt;
+&lt;p&gt;Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.&lt;/p&gt;
+&lt;p&gt;Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.&lt;/p&gt;
+&lt;h2 id=&#34;blockquotes&#34;&gt;Blockquotes&lt;/h2&gt;
+&lt;p&gt;The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a &lt;code&gt;footer&lt;/code&gt; or &lt;code&gt;cite&lt;/code&gt; element, and optionally with in-line changes such as annotations and abbreviations.&lt;/p&gt;
+&lt;h4 id=&#34;blockquote-without-attribution&#34;&gt;Blockquote without attribution&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Tiam, ad mint andaepu dandae nostion secatur sequo quae.
+&lt;strong&gt;Note&lt;/strong&gt; that you can use &lt;em&gt;Markdown syntax&lt;/em&gt; within a blockquote.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;blockquote-with-attribution&#34;&gt;Blockquote with attribution&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Don&amp;rsquo;t communicate by sharing memory, share memory by communicating.&lt;br&gt;
+— &lt;cite&gt;Rob Pike&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;tables&#34;&gt;Tables&lt;/h2&gt;
+&lt;p&gt;Tables aren&amp;rsquo;t part of the core Markdown spec, but Hugo supports supports them out-of-the-box.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Age&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Bob&lt;/td&gt;
+&lt;td&gt;27&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Alice&lt;/td&gt;
+&lt;td&gt;23&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;inline-markdown-within-tables&#34;&gt;Inline Markdown within tables&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Italics&lt;/th&gt;
+&lt;th&gt;Bold&lt;/th&gt;
+&lt;th&gt;Code&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;italics&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;bold&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;code&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;A&lt;/th&gt;
+&lt;th&gt;B&lt;/th&gt;
+&lt;th&gt;C&lt;/th&gt;
+&lt;th&gt;D&lt;/th&gt;
+&lt;th&gt;E&lt;/th&gt;
+&lt;th&gt;F&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/td&gt;
+&lt;td&gt;Phasellus ultricies, sapien non euismod aliquam, dui ligula tincidunt odio, at accumsan nulla sapien eget ex.&lt;/td&gt;
+&lt;td&gt;Proin eleifend dictum ipsum, non euismod ipsum pulvinar et. Vivamus sollicitudin, quam in pulvinar aliquam, metus elit pretium purus&lt;/td&gt;
+&lt;td&gt;Proin sit amet velit nec enim imperdiet vehicula.&lt;/td&gt;
+&lt;td&gt;Ut bibendum vestibulum quam, eu egestas turpis gravida nec&lt;/td&gt;
+&lt;td&gt;Sed scelerisque nec turpis vel viverra. Vivamus vitae pretium sapien&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;code-blocks&#34;&gt;Code Blocks&lt;/h2&gt;
+&lt;h4 id=&#34;code-block-with-backticks&#34;&gt;Code block with backticks&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;lang&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;en&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;charset&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Example HTML5 Document&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Test&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;code-block-indented-with-four-spaces&#34;&gt;Code block indented with four spaces&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;!doctype html&amp;gt;
+&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
+&amp;lt;head&amp;gt;
+  &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
+  &amp;lt;title&amp;gt;Example HTML5 Document&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+  &amp;lt;p&amp;gt;Test&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;code-block-with-hugos-internal-highlight-shortcode&#34;&gt;Code block with Hugo&amp;rsquo;s internal highlight shortcode&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;lang&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;en&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;meta&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;charset&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Example HTML5 Document&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Test&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;body&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;html&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h4 id=&#34;diff-code-block&#34;&gt;Diff code block&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-diff&#34; data-lang=&#34;diff&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;[dependencies.bevy]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git = &amp;#34;https://github.com/bevyengine/bevy&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;rev = &amp;#34;11f52b8c72fc3a568e8bb4a4cd1f3eb025ac2e13&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gd&#34;&gt;- features = [&amp;#34;dynamic&amp;#34;]
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gd&#34;&gt;&lt;/span&gt;&lt;span class=&#34;gi&#34;&gt;+ features = [&amp;#34;jpeg&amp;#34;, &amp;#34;dynamic&amp;#34;]
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;list-types&#34;&gt;List Types&lt;/h2&gt;
+&lt;h4 id=&#34;ordered-list&#34;&gt;Ordered List&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;First item&lt;/li&gt;
+&lt;li&gt;Second item&lt;/li&gt;
+&lt;li&gt;Third item&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;unordered-list&#34;&gt;Unordered List&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;List item&lt;/li&gt;
+&lt;li&gt;Another item&lt;/li&gt;
+&lt;li&gt;And another item&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;nested-list&#34;&gt;Nested list&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Fruit
+&lt;ul&gt;
+&lt;li&gt;Apple&lt;/li&gt;
+&lt;li&gt;Orange&lt;/li&gt;
+&lt;li&gt;Banana&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Dairy
+&lt;ul&gt;
+&lt;li&gt;Milk&lt;/li&gt;
+&lt;li&gt;Cheese&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;other-elements--abbr-sub-sup-kbd-mark&#34;&gt;Other Elements — abbr, sub, sup, kbd, mark&lt;/h2&gt;
+&lt;p&gt;&lt;abbr title=&#34;Graphics Interchange Format&#34;&gt;GIF&lt;/abbr&gt; is a bitmap image format.&lt;/p&gt;
+&lt;p&gt;H&lt;sub&gt;2&lt;/sub&gt;O&lt;/p&gt;
+&lt;p&gt;X&lt;sup&gt;n&lt;/sup&gt; + Y&lt;sup&gt;n&lt;/sup&gt; = Z&lt;sup&gt;n&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;Press &lt;kbd&gt;&lt;kbd&gt;CTRL&lt;/kbd&gt;+&lt;kbd&gt;ALT&lt;/kbd&gt;+&lt;kbd&gt;Delete&lt;/kbd&gt;&lt;/kbd&gt; to end the session.&lt;/p&gt;
+&lt;p&gt;Most &lt;mark&gt;salamanders&lt;/mark&gt; are nocturnal, and hunt for insects, worms, and other small creatures.&lt;/p&gt;
+&lt;h2 id=&#34;hyperlinked-image&#34;&gt;Hyperlinked image&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://google.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img src=&#34;https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Google&#34;
+	
+	
+&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;The above quote is excerpted from Rob Pike&amp;rsquo;s &lt;a class=&#34;link&#34; href=&#34;https://www.youtube.com/watch?v=PAAkCSZUG1c&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;talk&lt;/a&gt; during Gopherfest, November 18, 2015.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description>
+        </item>
+        
+    </channel>
+</rss>

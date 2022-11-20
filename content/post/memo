@@ -1,0 +1,2 @@
+ディレクトリ配下の指定した拡張子に対して権限変更を行う
+sudo find . -name "*.md" -print | xargs chmod 666

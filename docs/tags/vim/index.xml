@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>vim on sykfkk&#39;blog</title>
+        <link>https://v1v1db0y.github.io/tags/vim/</link>
+        <description>Recent content in vim on sykfkk&#39;blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Tue, 13 Sep 2022 10:26:23 +0900</lastBuildDate><atom:link href="https://v1v1db0y.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Vimの使い方</title>
+        <link>https://v1v1db0y.github.io/p/vim%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/</link>
+        <pubDate>Tue, 13 Sep 2022 10:26:23 +0900</pubDate>
+        
+        <guid>https://v1v1db0y.github.io/p/vim%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/</guid>
+        <description>&lt;img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Vimlogo.svg" alt="Featured image of post Vimの使い方" /&gt;&lt;h2 id=&#34;イントロ&#34;&gt;イントロ&lt;/h2&gt;
+&lt;p&gt;自分はTails Linuxを触ってるときにVimを初めて触りました。最初は
+&lt;em&gt;&lt;strong&gt;終了もできません&lt;/strong&gt;&lt;/em&gt;
+が触っているうちに慣れてきてキーバインドが癖になり、ないと生きていけなくなります。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;起動方法&#34;&gt;起動方法&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;vim
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;これで起動できます。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;vim [ファイル名]
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;これで名前のついたファイルを編集できます。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;移動方法&#34;&gt;移動方法&lt;/h2&gt;
+&lt;p&gt;移動には
+&lt;strong&gt;[h,j,k,l]&lt;/strong&gt;
+を使います。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;		[上に移動]
+			k
+[右に移動] h       l  [左に移動]
+			j
+		[下に移動]	
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;最初は慣れないかもしれませんが、キーがホームポジションに近いように設定されています。
+そのため慣れるととても扱いやすくなります。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;基本操作&#34;&gt;基本操作&lt;/h2&gt;
+&lt;p&gt;操作の基本的はコロンを入力してコマンドを入力します。&lt;/p&gt;
+&lt;h3 id=&#34;終了&#34;&gt;終了&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;:q
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;保存せずにvimを終了させます。&lt;/p&gt;
+&lt;h3 id=&#34;保存&#34;&gt;保存&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;:w
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;編集中のファイルを保存します。&lt;/p&gt;
+&lt;h3 id=&#34;保存して終了&#34;&gt;保存して終了&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;:wq
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;保存してからvimを終了します。&lt;/p&gt;
+&lt;h3 id=&#34;保存しないで終了&#34;&gt;保存しないで終了&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;:q!
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;保存しないでvimを終了します。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;インサートモード&#34;&gt;インサートモード&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://v1v1db0y.github.io/p/vim%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/insert.png&#34;
+	width=&#34;968&#34;
+	height=&#34;366&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/vim%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/insert_huee3a7193e36bb3be6b06fc0fe5f9e19b_5486_480x0_resize_box_3.png 480w, https://v1v1db0y.github.io/p/vim%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/insert_huee3a7193e36bb3be6b06fc0fe5f9e19b_5486_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;264&#34;
+		data-flex-basis=&#34;634px&#34;
+	
+&gt;
+インサートモードは文字を入力しますよー、というモードです。
+コマンドを入力すると画像のように右下にINSERTと表示されます。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;i
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;iを押すと選択中の前の文字にカーソルが当てられて文字を挿入できるようになります。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;a
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;aを押すと選択中の後の文字にカーソルが当てられて文字を挿入できるようになります。&lt;/p&gt;
+&lt;h4 id=&#34;インサートモードをぬける&#34;&gt;インサートモードをぬける&lt;/h4&gt;
+&lt;p&gt;インサートモードを抜けるときはキーボード左上のESCキーを押します。&lt;br&gt;
+右下に表示されていたINSERTの文字が消えていたら抜けられています。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;行番号を表示する&#34;&gt;行番号を表示する&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;:set number
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;省略することもできます。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;:set nu
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;これでも同じ結果になります。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;vimの設定ファイル&#34;&gt;Vimの設定ファイル&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;:set nu&lt;/code&gt;などは一度vimを抜けてから起動すると元に戻ってしまいます。そのためvimの設定ファイル
+に予め記述する必要があります。&lt;br&gt;
+Vimを設定するためのファイルは&lt;code&gt;~/.vimrc&lt;/code&gt;にあります。もしもなかったらファイルを作成しましょう。&lt;/p&gt;
+&lt;p&gt;作成が出来たら&lt;code&gt;vim  ~/.vimrc&lt;/code&gt;で編集しましょう。&lt;/p&gt;
+&lt;p&gt;書き方はコマンドで打っていることをそのまま書けばいいだけです。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-php&#34; data-lang=&#34;php&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nx&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;number&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;vimmer&#34;&gt;Vimmer&lt;/h2&gt;
+&lt;p&gt;以上のことが出来ればファイルをちょこっとだけ編集する分には問題ないと思います。
+この先はVIMをもっと極めたい人向けです。&lt;/p&gt;
+&lt;h3 id=&#34;vimtutor&#34;&gt;vimtutor&lt;/h3&gt;
+&lt;p&gt;Vimに入っているチュートリアルです。日本語化もできたはずです。&lt;/p&gt;
+&lt;h2 id=&#34;vi-vim-neovim-gvim&#34;&gt;vi Vim NeoVim GVim&lt;/h2&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
