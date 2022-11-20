@@ -7,6 +7,7 @@ categories = [
 	"Writeup"
 ]
 image = "logo.png"
+lastmod = '2020-11-21'
 +++
 
 ## 結果
