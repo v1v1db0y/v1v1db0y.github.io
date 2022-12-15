@@ -38,6 +38,7 @@ initrd /initramfs-linux.img
 
 ### ibtってなに
 Intel 11世代から導入されたCPUの保護機能みたいです  
+私はIntel 12世代をつかっているのでついてるみたいですね〜
 
 <font color="DarkSalmon ">[参考]</font>  
 https://gihyo.jp/article/2022/11/daily-linux-221107  
@@ -54,6 +55,7 @@ https://sakura-education.com/myblog/archives/1282
 
 ![](20221216-014134.png)
 
+多分 intel 11世代、12世代を使ってる人が起こる問題だと思います。
 
 ### 参考にした記事　
 

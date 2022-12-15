@@ -54,7 +54,8 @@ hogehogeにはもともとある設定ファイルに名前を置き換えてく
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;ibtってなに&#34;&gt;ibtってなに&lt;/h3&gt;
-&lt;p&gt;Intel 11世代から導入されたCPUの保護機能みたいです&lt;/p&gt;
+&lt;p&gt;Intel 11世代から導入されたCPUの保護機能みたいです&lt;br&gt;
+私はIntel 12世代をつかっているのでついてるみたいですね〜&lt;/p&gt;
 &lt;p&gt;&lt;font color=&#34;DarkSalmon &#34;&gt;[参考]&lt;/font&gt;&lt;br&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://gihyo.jp/article/2022/11/daily-linux-221107&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://gihyo.jp/article/2022/11/daily-linux-221107&lt;/a&gt;&lt;br&gt;
@@ -79,6 +80,7 @@ Arch linux kernel は5.18からデフォルトになっていたってこと？�
 		data-flex-basis=&#34;2446px&#34;
 	
 &gt;&lt;/p&gt;
+&lt;p&gt;多分 intel 11世代、12世代を使ってる人が起こる問題だと思います。&lt;/p&gt;
 &lt;h3 id=&#34;参考にした記事&#34;&gt;参考にした記事　&lt;/h3&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://zenn.dev/warspitenavy/articles/e7ab5734604639&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;ArchLinuxのインストールに失敗した&lt;/a&gt;&lt;br&gt;
