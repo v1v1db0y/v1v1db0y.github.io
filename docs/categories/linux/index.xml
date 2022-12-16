@@ -5,8 +5,91 @@
         <link>https://v1v1db0y.github.io/categories/linux/</link>
         <description>Recent content in Linux on sykfkk&#39;blog</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language>
-        <lastBuildDate>Tue, 13 Sep 2022 10:26:23 +0900</lastBuildDate><atom:link href="https://v1v1db0y.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" /><item>
+        <language>en-us</language><atom:link href="https://v1v1db0y.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Virtual boxが起動しない</title>
+        <link>https://v1v1db0y.github.io/p/virtual-box%E3%81%8C%E8%B5%B7%E5%8B%95%E3%81%97%E3%81%AA%E3%81%84/</link>
+        <pubDate>Fri, 16 Dec 2022 00:47:26 +0900</pubDate>
+        
+        <guid>https://v1v1db0y.github.io/p/virtual-box%E3%81%8C%E8%B5%B7%E5%8B%95%E3%81%97%E3%81%AA%E3%81%84/</guid>
+        <description>&lt;p&gt;ArchlinuxにVirtualboxをいれようと思ったら起動しなかったので備忘録です。&lt;/p&gt;
+&lt;h2 id=&#34;症状&#34;&gt;症状&lt;/h2&gt;
+&lt;p&gt;起動させると20%で止まってゾンビプロセスとなってしまいます。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://v1v1db0y.github.io/p/virtual-box%E3%81%8C%E8%B5%B7%E5%8B%95%E3%81%97%E3%81%AA%E3%81%84/a.png&#34;
+	width=&#34;1864&#34;
+	height=&#34;1356&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/virtual-box%E3%81%8C%E8%B5%B7%E5%8B%95%E3%81%97%E3%81%AA%E3%81%84/a_hu242e723816041c7be34286996304b3b1_300828_480x0_resize_box_3.png 480w, https://v1v1db0y.github.io/p/virtual-box%E3%81%8C%E8%B5%B7%E5%8B%95%E3%81%97%E3%81%AA%E3%81%84/a_hu242e723816041c7be34286996304b3b1_300828_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;137&#34;
+		data-flex-basis=&#34;329px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;対処方法&#34;&gt;対処方法&lt;/h2&gt;
+&lt;p&gt;ブートローダー起動時にオプションで&lt;code&gt;ibt=off&lt;/code&gt;と記述する&lt;/p&gt;
+&lt;h3 id=&#34;systemd-bootで永続化させる&#34;&gt;Systemd-bootで永続化させる&lt;/h3&gt;
+&lt;p&gt;ファイルを開いてください&lt;br&gt;
+&lt;code&gt;sudo vim /boot/loader/entries/hogehoge.conf&lt;/code&gt;&lt;br&gt;
+hogehogeにはもともとある設定ファイルに名前を置き換えてください&lt;/p&gt;
+&lt;p&gt;optionsにある項目の末尾に&lt;code&gt;ibt=off&lt;/code&gt;と記述してください。&lt;/p&gt;
+&lt;p&gt;こんな感じ&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-diff&#34; data-lang=&#34;diff&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;title Arch Linux (linux)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;linux /vmlinuz-linux
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;initrd /intel-ucode.img
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;initrd /initramfs-linux.img
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gd&#34;&gt;- options root=PARTUUID &amp;lt;なんか書かれてるかもしれない部分&amp;gt; rootfstype=ext4 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;gd&#34;&gt;&lt;/span&gt;&lt;span class=&#34;gi&#34;&gt;+ options root=PARTUUID &amp;lt;なんか書かれてるかもしれない部分&amp;gt; rootfstype=ext4 ibt=off
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;ibtってなに&#34;&gt;ibtってなに&lt;/h2&gt;
+&lt;p&gt;Intel 11世代から導入されたCPUの保護機能みたいです&lt;br&gt;
+私はIntel 12世代をつかっているのでついてるみたいですね〜&lt;/p&gt;
+&lt;p&gt;&lt;font color=&#34;DarkSalmon &#34;&gt;[参考]&lt;/font&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://gihyo.jp/article/2022/11/daily-linux-221107&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://gihyo.jp/article/2022/11/daily-linux-221107&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://github.com/nns779/px4_drv/issues/24&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/nns779/px4_drv/issues/24&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Linux kernel 5.18からIBTはサポートしていたみたいですが、6.02でデフォルトで機能するみたいです。
+Arch linux kernel は5.18からデフォルトになっていたってこと？？　&lt;/p&gt;
+&lt;p&gt;別問題ですが、intel 11thにはCPUのバグで起動するとフリーズするたいです&lt;br&gt;
+同じような症状を持った方がいらっしゃったので気になりました。&lt;/p&gt;
+&lt;p&gt;&lt;font color=&#34;DarkSalmon &#34;&gt;[参考]&lt;/font&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://sakura-education.com/myblog/archives/1282&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://sakura-education.com/myblog/archives/1282&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://v1v1db0y.github.io/p/virtual-box%E3%81%8C%E8%B5%B7%E5%8B%95%E3%81%97%E3%81%AA%E3%81%84/20221216-014134.png&#34;
+	width=&#34;1203&#34;
+	height=&#34;118&#34;
+	srcset=&#34;https://v1v1db0y.github.io/p/virtual-box%E3%81%8C%E8%B5%B7%E5%8B%95%E3%81%97%E3%81%AA%E3%81%84/20221216-014134_huec17d5d19a655f0ed99b46f20130cef6_48024_480x0_resize_box_3.png 480w, https://v1v1db0y.github.io/p/virtual-box%E3%81%8C%E8%B5%B7%E5%8B%95%E3%81%97%E3%81%AA%E3%81%84/20221216-014134_huec17d5d19a655f0ed99b46f20130cef6_48024_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;1019&#34;
+		data-flex-basis=&#34;2446px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;多分 intel 11,12,13世代を使ってる人が起こる問題だと思います。&lt;/p&gt;
+&lt;h2 id=&#34;参考にした記事&#34;&gt;参考にした記事　&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://zenn.dev/warspitenavy/articles/e7ab5734604639&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;ArchLinuxのインストールに失敗した&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://wiki.archlinux.jp/index.php/%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E3%83%91%E3%83%A9%E3%83%A1%E3%83%BC%E3%82%BF&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;カーネルパラメータ&lt;/a&gt;&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://sakura-education.com/myblog/archives/1282&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Virtualboxが起動しない（kernel 5.18／kernel 5.19） – 日々の記録簿&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Vimの使い方</title>
         <link>https://v1v1db0y.github.io/p/vim%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9/</link>
         <pubDate>Tue, 13 Sep 2022 10:26:23 +0900</pubDate>
@@ -111,50 +194,6 @@ Vimを設定するためのファイルは&lt;code&gt;~/.vimrc&lt;/code&gt;に�
 &lt;h3 id=&#34;vimtutor&#34;&gt;vimtutor&lt;/h3&gt;
 &lt;p&gt;Vimに入っているチュートリアルです。日本語化もできたはずです。&lt;/p&gt;
 &lt;h2 id=&#34;vi-vim-neovim-gvim&#34;&gt;vi Vim NeoVim GVim&lt;/h2&gt;
-</description>
-        </item>
-        <item>
-        <title>Arch Linuxのインストール</title>
-        <link>https://v1v1db0y.github.io/p/arch-linux%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</link>
-        <pubDate>Sat, 10 Sep 2022 01:27:17 +0900</pubDate>
-        
-        <guid>https://v1v1db0y.github.io/p/arch-linux%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</guid>
-        <description>&lt;img src="https://archlinux.org/static/logos/archlinux-logo-light-scalable.1ae4cc2e2469.svg" alt="Featured image of post Arch Linuxのインストール" /&gt;&lt;h2 id=&#34;イントロダクション&#34;&gt;イントロダクション&lt;/h2&gt;
-&lt;p&gt;Linuxでしばらく遊んでいるとArch Linuxに出会うと思います。&lt;/p&gt;
-&lt;p&gt;Arch Linuxはシンプル、ミニマリズムに焦点を当てたLinuxディストリビューションです。
-インストールはCUI操作であり、コマンドを覚えたての初心者からするととっつきにくい
-ディストリビューションです。&lt;br&gt;
-しかしインストールをしてみるだけで、普段パソコンの電源ボタンを押してから
-OSのロック画面を開くまでの間に何が行われているか感覚的に掴むことができます。
-Linuxをもっと知りたい初心者向けに書いていきますので是非とも挑戦してください。&lt;/p&gt;
-&lt;h2 id=&#34;arch-linuxについて&#34;&gt;Arch Linuxについて&lt;/h2&gt;
-&lt;p&gt;Arch Linuxの特徴としてローリングリリースを採用しています。
-ローリングリリースとはパッケージを頻繫に更新することで常に
-最新のパッケージを利用し続けるということです。
-そのためOSのバージョンという概念がありません。&lt;/p&gt;
-&lt;h2 id=&#34;インストールする&#34;&gt;インストールする。&lt;/h2&gt;
-&lt;h3 id=&#34;usbにarchインストールメディアをインストールしていきます&#34;&gt;USBにArchインストールメディアをインストールしていきます。&lt;/h3&gt;
-&lt;p&gt;ここはほかのディストリビューションとあまり変わりません。&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.archlinux.jp/download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Arch Linuxをダウンロード&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;好みの日本サーバーを選択してイメージファイルをダウンロードしてください。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://v1v1db0y.github.io/p/arch-linux%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/screenshot-2022-09-10.png&#34;
-	width=&#34;813&#34;
-	height=&#34;637&#34;
-	srcset=&#34;https://v1v1db0y.github.io/p/arch-linux%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/screenshot-2022-09-10_hu97f93144658833dab2e1bf1ba9736599_132946_480x0_resize_box_3.png 480w, https://v1v1db0y.github.io/p/arch-linux%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/screenshot-2022-09-10_hu97f93144658833dab2e1bf1ba9736599_132946_1024x0_resize_box_3.png 1024w&#34;
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;ファイル名の末尾に.isoとあるファイルを選択してください。&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;127&#34;
-		data-flex-basis=&#34;306px&#34;
-	
-&gt;&lt;/p&gt;
-&lt;p&gt;インストールが完了したら、1GB以上のUSBをパソコンに差し込んでRufus又はEtcherでイメージファイルを
-焼いていきます。&lt;/p&gt;
-&lt;h2 id=&#34;続きはいつか書きます&#34;&gt;続きはいつか書きます。&lt;/h2&gt;
 </description>
         </item>
         

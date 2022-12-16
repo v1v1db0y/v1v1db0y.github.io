@@ -2,7 +2,7 @@
 title = "Arch Linuxのインストール"
 description = "Arch Linuxのインストールガイド"
 date = 2022-09-10T01:27:17+09:00
-draft = false
+draft = true
 image = "https://archlinux.org/static/logos/archlinux-logo-light-scalable.1ae4cc2e2469.svg"
 tags = [
 	"linux",

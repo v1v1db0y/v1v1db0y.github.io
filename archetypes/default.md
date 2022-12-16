@@ -2,7 +2,8 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: false
-tags: [,,]
-categories: [,,]
+toc : false #目次を設定する
+#tags: [,,]
+#categories: [,,]
 ---
 
